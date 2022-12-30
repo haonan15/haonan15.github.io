@@ -83,7 +83,6 @@ function fetchRandomPost(){
             randomPostWorking = false;
         }
 
-
     }
 }
 
