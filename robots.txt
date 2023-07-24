@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /categories/
+Allow: /tags/
+Allow: /archives/
+Allow: /cc/
+Allow: /about/
+Allow: /essay/
+Allow: /link/
+Allow: /moments/
+Allow: /page/
+Allow: /privacy/
+Allow: /stars/
+
+Sitemap: https://blog.bywind.xyz/sitemap.xml
+Sitemap: https://blog.bywind.xyz/baidusitemap.xml
