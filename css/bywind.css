@@ -152,9 +152,9 @@ i.hnfont {
     font-size: 22px;
     line-height: 1;
 }
-#page img {
-    border-radius: 12px;
-}
+/*#page img {*/
+/*    border-radius: 12px;*/
+/*}*/
 
 #page p a:not(.headerlink) {
     text-decoration: none;

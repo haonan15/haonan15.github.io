@@ -326,6 +326,13 @@
 
   
   <url>
+    <loc>https://blog.bywind.xyz/tags/Fiddler/</loc>
+    <lastmod>2023-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.bywind.xyz/tags/Hexo/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -334,6 +341,13 @@
   
   <url>
     <loc>https://blog.bywind.xyz/tags/Butterfly/</loc>
+    <lastmod>2023-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.bywind.xyz/tags/SSM/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -354,20 +368,6 @@
   </url>
   
   <url>
-    <loc>https://blog.bywind.xyz/tags/Fiddler/</loc>
-    <lastmod>2023-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.bywind.xyz/tags/SSM/</loc>
-    <lastmod>2023-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.bywind.xyz/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -375,14 +375,14 @@
   </url>
   
   <url>
-    <loc>https://blog.bywind.xyz/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <loc>https://blog.bywind.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bywind.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://blog.bywind.xyz/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -454,14 +454,14 @@
   </url>
   
   <url>
-    <loc>https://blog.bywind.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blog.bywind.xyz/categories/Java%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.bywind.xyz/categories/Java%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://blog.bywind.xyz/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2023-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
