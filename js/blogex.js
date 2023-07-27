@@ -503,6 +503,8 @@ document.addEventListener("pjax:send", (function() {
         $(window).prop("keydown", null).off("keydown");
     }
 ))
+
+
 //监听跳转页面输入框是否按下回车
 function listenToPageInputPress() {
     var input = document.getElementById("toPageText");
