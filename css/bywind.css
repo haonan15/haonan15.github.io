@@ -152,9 +152,9 @@ i.hnfont {
     font-size: 22px;
     line-height: 1;
 }
-/*#page img {*/
-/*    border-radius: 12px;*/
-/*}*/
+#page img {
+    border-radius: 12px;
+}
 
 #page p a:not(.headerlink) {
     text-decoration: none;
@@ -6447,6 +6447,7 @@ img.footer_mini_logo {
 img.footer_mini_logo:hover {
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
+    transform: scale(1.2)
 }
 
 /* logo居中 */
@@ -12501,6 +12502,7 @@ div#post-comment {
 
 .el-input--small .el-input__inner {
     padding: 8px;
+    padding-left: 16px;
 }
 
 /* 头像 */
@@ -12627,18 +12629,42 @@ img.tk-avatar-img {
     background-color: var(--bywind-card-bg) !important;
     color: var(--bywind-fontcolor) !important;
     border-color: var(--bywind-card-border) !important;
-    border: var(--style-border)!important;
+    border: none!important;
     font-weight: bold;
 }
 
 /* 输入框 */
 .el-input__inner {
-    background: var(--bywind-background) !important;
-    border: 1px solid var(--bywind-card-border) !important;
+    background: var(--bywind-secondbg) !important;
+    border: none !important;
     color: var(--bywind-fontcolor) !important;
     padding-left: 8px;
 }
 
+.el-input.el-input--small.el-input-group.el-input-group--prepend {
+    border-radius: 12px;
+    background: var(--bywind-secondbg);
+    border: var(--style-border-always);
+}
+
+.el-input-group--prepend .el-input__inner,.el-input-group__append {
+    border-radius: 12px!important
+}
+
+.page .el-input.el-input--small.el-input-group.el-input-group--prepend {
+    background: var(--bywind-card-bg)
+}
+
+@media screen and (max-width: 769px) {
+    .el-input__inner {
+        background:var(--bywind-card-bg)!important
+    }
+
+    .el-input.el-input--small.el-input-group.el-input-group--prepend {
+        background: var(--bywind-card-bg);
+        margin-bottom: 0
+    }
+}
 .page .el-input__inner {
     background: var(--bywind-card-bg) !important;
 }
@@ -12649,7 +12675,7 @@ img.tk-avatar-img {
 
 /* 评论输入框 */
 .el-textarea__inner {
-    background: var(--bywind-background) !important;
+    background: var(--bywind-secondbg) !important;
     color: var(--bywind-fontcolor) !important;
     border-radius: 12px !important;
     min-height: 100px !important;
@@ -12796,7 +12822,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 .tk-comments .el-button--primary {
     border-color: var(--bywind-fontcolor) !important;
     color: var(--bywind-card-bg) !important;
-    border-radius: 4px !important;
+    border-radius: 12px !important;
     box-shadow: var(--bywind-shadow-black);
     transition: 0.3s;
     width: 5rem;
@@ -13124,6 +13150,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 
 .tk-meta-input .el-input .el-input-group__prepend {
     -webkit-user-select: none;
+    border-radius: 10px 0 0 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -15363,12 +15390,15 @@ span.hexo-douban-pagenum {
     position: relative;
     background: var(--bywind-secondbg);
     user-select: none;
+    transition: .3s;
 }
 
 #about-page .author-img img {
     border-radius: 200px;
 }
-
+#about-page .author-img:hover {
+    transform: scale(1.1)
+}
 #about-page .author-img::before {
     content: '';
     -webkit-transition: 1s;

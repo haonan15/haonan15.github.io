@@ -4715,12 +4715,6 @@ span.nota:hover:before {
   background-color: #525252;
   color: #e2f1ff;
 }
-[data-theme='dark'] #page-header.nav-fixed > #nav,
-[data-theme='dark'] #page-header.not-top-img > #nav {
-  background: rgba(18,18,18,0.8);
-  -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
-  box-shadow: 0 5px 6px -5px rgba(133,133,133,0);
-}
 [data-theme='dark'] #post-comment #comment-switch {
   background: #2c2c2c !important;
 }
@@ -5003,6 +4997,12 @@ span.nota:hover:before {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
+.cf-article .cf-img-avatar {
+    border-radius: 50%!important;
+    right: -30px!important;
+    bottom: -30px!important;
+}
+
 .search-dialog {
   position: fixed;
   top: 10%;
