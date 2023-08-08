@@ -23,56 +23,50 @@ function coverColor() {
         document.styleSheets[0].addRule(":root", "--bywind-main-none: var(--bywind-theme-none)!important"),
         bywind.initThemeColor())
 }
+function padZero(e, t=2) {
+    return (Array(t).join("0") + e).slice(-t)
+}
 function colorHex(e) {
-    var t = e;
-    if (/^(rgb|RGB)/.test(t)) {
-        for (var o = t.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(","), n = "#", a = 0; a < o.length; a++) {
-            var r = Number(o[a]).toString(16);
-            "0" === r && (r += r),
-                n += r
+    if (/#([0-9a-f]{3}|[0-9a-f]{6})/i.test(e))
+        return e;
+    if (/^(rgb|RGB)/.test(e)) {
+        let t = e.replace(/(?:\(|\)|rgb|RGB)*/g, "").split(",")
+            , o = "#";
+        for (let e of t) {
+            o += padZero((+e).toString(16))
         }
-        return 7 !== n.length && (n = t),
-            n
+        return o
     }
-    if (!/^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/.test(t))
-        return t;
-    var i = t.replace(/#/, "").split("");
-    if (6 === i.length)
-        return t;
-    if (3 === i.length) {
-        var l = "#";
-        for (a = 0; a < i.length; a += 1)
-            l += i[a] + i[a];
-        return l
-    }
+    return e
 }
 function colorRgb(e) {
-    var t = e.toLowerCase();
-    if (t && /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/.test(t)) {
+    let t = e.toLowerCase();
+    if (t && /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(t)) {
         if (4 === t.length) {
-            for (var o = "#", n = 1; n < 4; n += 1)
-                o += t.slice(n, n + 1).concat(t.slice(n, n + 1));
-            t = o
+            let e = "#";
+            for (let o = 1; o < 4; o += 1)
+                e += t.slice(o, o + 1).repeat(2);
+            t = e
         }
-        var a = [];
-        for (n = 1; n < 7; n += 2)
-            a.push(parseInt("0x" + t.slice(n, n + 2)));
-        return "rgb(" + a.join(",") + ")"
+        let e = [];
+        for (let o = 1; o < 7; o += 2)
+            e.push(parseInt("0x" + t.slice(o, o + 2)));
+        return `rgb(${e.join(",")})`
     }
     return t
 }
 function LightenDarkenColor(e, t) {
-    var o = !1;
+    let o = !1;
     "#" == e[0] && (e = e.slice(1),
         o = !0);
-    var n = parseInt(e, 16)
-        , a = (n >> 16) + t;
-    a > 255 ? a = 255 : a < 0 && (a = 0);
-    var r = (n >> 8 & 255) + t;
-    r > 255 ? r = 255 : r < 0 && (r = 0);
-    var i = (255 & n) + t;
-    return i > 255 ? i = 255 : i < 0 && (i = 0),
-    (o ? "#" : "") + String("000000" + (i | r << 8 | a << 16).toString(16)).slice(-6)
+    let n = parseInt(e, 16)
+        , a = (n >> 16) + t
+        , i = (n >> 8 & 255) + t
+        , r = (255 & n) + t;
+    return a = Math.min(255, Math.max(0, a)),
+        i = Math.min(255, Math.max(0, i)),
+        r = Math.min(255, Math.max(0, r)),
+    (o ? "#" : "") + (r | i << 8 | a << 16).toString(16).padStart(6, "0")
 }
 function getContrastYIQ(e) {
     var t, o = colorRgb(e).match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
@@ -114,10 +108,9 @@ window.onload = function() {
 var getTimeState = ()=>{
     var e = (new Date).getHours()
         , t = "";
-    return e >= 0 && e <= 5 ? t = "晚安" : e > 5 && e <= 10 ? t = "早上好" : e > 10 && e <= 14 ? t = "中午好" : e > 14 && e <= 18 ? t = "下午好" : e > 18 && e <= 24 && (t = "晚上好"),
-    t
-}
-;
+    return e >= 0 && e <= 5 ? t = "睡个好觉，保证精力充沛" : e > 5 && e <= 10 ? t = "一日之计在于晨" : e > 10 && e <= 14 ? t = "吃饱了才有力气干活" : e > 14 && e <= 18 ? t = "集中精力，攻克难关" : e > 18 && e <= 24 && (t = "不要太劳累了，早睡更健康"),
+        t
+};
 function fly_to_top() {
     document.getElementById("guli_top").classList.add("open_wing"),
         setTimeout((function() {
