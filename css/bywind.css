@@ -12929,7 +12929,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
     .tk-submit .el-button--primary {
         width: 5rem;
         height: 132px;
-        top: -161px;
+        top: -132px;
     }
 
     .tk-row-actions-start {
@@ -13603,7 +13603,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
     #post .tag_share .post-meta__tag-list {
         display: flex;
         overflow: scroll;
-        position: absolute;
+        /*position: absolute;*/
         left: 0;
         padding: 0 20px 0 20px;
         width: 100%;

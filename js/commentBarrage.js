@@ -2,7 +2,7 @@ var commentBarrageConfig = {
     //同时最多显示弹幕数
     maxBarrage: 1,
     //弹幕显示间隔时间ms
-    barrageTime: 4000,
+    barrageTime: 6000,
     //twikoo部署地址腾讯云的为环境ID
     twikooUrl: "https://twikoo.bywind.xyz/",
     //token获取见上方
