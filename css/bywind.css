@@ -12174,6 +12174,7 @@ a.reward-main-btn:hover {
 #pagination img.prev-cover, #pagination img.next-cover {
     opacity: 0.15;
     transform: scale(1.03);
+    top: 0;
     transition: 0.3s;
     filter: blur(0px);
     -webkit-backface-visibility: hidden;
