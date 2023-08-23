@@ -7596,7 +7596,7 @@ div#power-star-title {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /* background-color: #e71840; */
-    background: url(https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/page/wechatface.png) center center no-repeat;
+    background: url(https://cloud-image-host.oss-cn-beijing.aliyuncs.com/page/wechatface.png) center center no-repeat;
     background-size: 100%;
 }
 
@@ -7606,7 +7606,7 @@ div#power-star-title {
     transform: rotateY(180deg);
     box-sizing: border-box;
     /* background-color: #212121; */
-    background: url(https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/page/wechatbackface.png) center center no-repeat;
+    background: url(https://cloud-image-host.oss-cn-beijing.aliyuncs.com/page/wechatbackface.png) center center no-repeat;
     background-size: 100%;
 }
 
