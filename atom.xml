@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>随风起</title>
-  <icon>https://www.gravatar.com/avatar/ef224517e4db3409d77c3a3f605a51c8</icon>
+  <icon>https://www.gravatar.com/avatar/00f859eb1e66c7afc295b63d6d2327b2</icon>
   <subtitle>分享知识与美好时光</subtitle>
   <link href="https://blog.bywind.xyz/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>随风起</name>
-    <email>1849907187@qq.com</email>
+    <email>jolyne15@qq.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -101,9 +101,9 @@
     
     <category term="推荐" scheme="https://blog.bywind.xyz/tags/%E6%8E%A8%E8%8D%90/"/>
     
-    <category term="必看" scheme="https://blog.bywind.xyz/tags/%E5%BF%85%E7%9C%8B/"/>
-    
     <category term="设计模式" scheme="https://blog.bywind.xyz/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    <category term="必看" scheme="https://blog.bywind.xyz/tags/%E5%BF%85%E7%9C%8B/"/>
     
   </entry>
   

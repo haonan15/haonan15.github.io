@@ -6433,6 +6433,7 @@ a.deal_link {
 a.deal_link:hover {
     color: var(--bywind-white);
     background: var(--bywind-main);
+    transform: scale(1.1);
 }
 
 img.footer_mini_logo {
@@ -9901,6 +9902,7 @@ div#author-info__sayhi:hover {
 
 #aside-content>.card-widget.card-info::before {
     background: linear-gradient(-25deg,var(--bywind-main),#031764,var(--bywind-main),#67044d);
+    /*试试linear-gradient(-45deg,#448bff,var(--bywind-main),#ee7752,#e73c7e,#23a6d5,#23d5ab)*/
     /*background: linear-gradient(-25deg, var(--bywind-main), var(--bywind-main-op-deep), var(--bywind-main), var(--bywind-main-op-deep));*/
     background-size: 400%;
     position: absolute;
