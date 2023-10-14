@@ -10908,6 +10908,8 @@ span.post-meta-position {
 .el-textarea .el-input__count {
     color: var(--bywind-secondtext) !important;
     -webkit-user-select: none;
+    bottom: 8px!important;
+    right: 12px!important;
 }
 
 .post-meta-commentcount i {
@@ -12911,7 +12913,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
     transition: 0.3s;
     width: 5rem;
     position: absolute;
-    top: -53px;
+    top: -43px;
     right: 0px;
     margin-left: 0.5rem !important;
     height: 32px;
@@ -12924,19 +12926,22 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 
 .tk-row-actions-start {
     position: absolute;
-    top: -100px;
+    top: -84px;
     left: 17px;
 }
 
+.tk-submit {
+    margin-top: .8rem!important
+}
 @media screen and (max-width: 768px) {
     .tk-submit .el-button--primary {
         width: 5rem;
-        height: 132px;
+        height: 122px;
         top: -132px;
     }
 
     .tk-row-actions-start {
-        top: -210px;
+        top: -176px;
     }
 }
 
@@ -12960,15 +12965,15 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 }
 
 .tk-row.actions {
-    margin-bottom: 0.5rem !important;
-    margin-left: 0px !important;
-    margin-top: 0.5rem !important;
-    justify-content: space-around !important;
+    margin-bottom: 0!important;
+    margin-left: 0!important;
+    margin-top: 0!important;
+    justify-content: space-around!important;
 }
 
 .tk-meta-input {
     position: relative !important;
-    margin-top: 0.8rem;
+    margin-top: 8px;
     width: calc(100% - 5.5rem);
 }
 
@@ -13283,12 +13288,14 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
         flex-direction: column;
         top: 0px;
         position: inherit !important;
+        margin-top: 8px;
     }
 
     .tk-meta-input .el-input {
         margin-left: 0px !important;
         width: 100% !important;
-        margin-bottom: 8px;
+        margin-bottom: 4px;
+        margin-top: 0px;
     }
 
     .tk-icon {
@@ -17433,4 +17440,9 @@ a.bber-reply {
     font-size: 12px;
     line-height: 1;
     opacity: 0.6;
+}
+
+/*暂用，会删*/
+#nav #site-name i{
+    font-size: 20px;
 }
