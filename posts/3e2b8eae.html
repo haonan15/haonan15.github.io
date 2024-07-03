@@ -1,0 +1,632 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>软件设计师知识点整理（一） | 随风起</title><meta name="author" content="随风起,jolyne15@qq.com"><meta name="copyright" content="随风起"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="软件设计师知识点整理（一） 一、计算机网络 二、操作系统基本原理 四、计算机组成原理与体系结构 软件设计师知识点整理（二） 四、编译原理基础 五、软件工程概述 六、计算机软件法律法规 软件设计师知识点整理（三） 七、系统安全设计与分析 八、数据结构与算法基础 九、数据库系统  一、计算机网络OSI七层模型OSI 将计算机网络体系结构划分为七层，每一层实现各自的功能和协议，并完成与相邻层的接口通信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软件设计师知识点整理（一）">
+<meta property="og:url" content="https://blog.bywind.xyz/posts/3e2b8eae.html">
+<meta property="og:site_name" content="随风起">
+<meta property="og:description" content="软件设计师知识点整理（一） 一、计算机网络 二、操作系统基本原理 四、计算机组成原理与体系结构 软件设计师知识点整理（二） 四、编译原理基础 五、软件工程概述 六、计算机软件法律法规 软件设计师知识点整理（三） 七、系统安全设计与分析 八、数据结构与算法基础 九、数据库系统  一、计算机网络OSI七层模型OSI 将计算机网络体系结构划分为七层，每一层实现各自的功能和协议，并完成与相邻层的接口通信">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.bywind.xyz/img/cover/image-2023072201.png">
+<meta property="article:published_time" content="2023-07-23T15:22:06.000Z">
+<meta property="article:modified_time" content="2024-07-03T08:40:08.541Z">
+<meta property="article:author" content="随风起">
+<meta property="article:tag" content="软考">
+<meta property="article:tag" content="软件设计师">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.bywind.xyz/img/cover/image-2023072201.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://blog.bywind.xyz/posts/3e2b8eae"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '软件设计师知识点整理（一）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-03 16:40:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta http-equiv="Access-Control-Allow-Origin" content="*" /><meta name="referrer" content="strict-origin-when-cross-origin" /><link rel="stylesheet" href="/css/bywind.css"><link rel="stylesheet" href="/bywind/commentBarrage.css"><link rel="stylesheet" href="https://cdn3.codesign.qq.com/icons/X2bzpZvRmrZkAaV/latest/iconfont.css" media="all" onload="this.media='all'"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="all" onload="this.media='all'"><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script><script src="/js/bywind.js"></script><script data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}" src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pace/1.2.4/pace.min.js"></script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="随风起" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="bywind.hideLoading()" style="zoom:1"><div class="loading-bg"><img class="loading-img nolazyload" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div></div><script>const preloader = {
+  endLoading: () => {
+    // document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="console" style="zoom: 1;"><div class="close-btn" onclick="bywind.hideConsole()" href="javascript:void(0);"><i class="fas fa-circle-xmark"></i></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments" onclick="bywind.hideConsole()"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title">最近评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags" onclick="bywind.hideConsole()"><div class="card-content"><div class="author-content-item-tips">标签</div><span class="author-content-item-title">寻找感兴趣的领域</span></div><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size: NaNpx; color: rgb(109, 118, 80)"><span>Hexo</span><sup>5</sup></a><a href="/tags/Butterfly/" style="font-size: NaNpx; color: rgb(171, 168, 154)"><span>Butterfly</span><sup>5</sup></a><a href="/tags/Fiddler/" style="font-size: NaNpx; color: rgb(79, 172, 129)"><span>Fiddler</span><sup>1</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" style="font-size: NaNpx; color: rgb(98, 119, 87)"><span>主题美化</span><sup>1</sup></a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: NaNpx; color: rgb(111, 135, 155)"><span>图床</span><sup>1</sup></a><a href="/tags/SSM/" style="font-size: NaNpx; color: rgb(32, 92, 71)"><span>SSM</span><sup>1</sup></a><a href="/tags/LeetCode/" style="font-size: NaNpx; color: rgb(86, 77, 185)"><span>LeetCode</span><sup>2</sup></a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: NaNpx; color: rgb(32, 135, 152)"><span>算法</span><sup>2</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: NaNpx; color: rgb(189, 167, 198)"><span>计算机基础</span><sup>3</sup></a><a href="/tags/%E6%8E%A8%E8%8D%90/" style="font-size: NaNpx; color: rgb(177, 188, 37)"><span>推荐</span><sup>3</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(18, 32, 34)"><span>设计模式</span><sup>3</sup></a><a href="/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(46, 151, 174)"><span>创建型模式</span><sup>1</sup></a><a href="/tags/%E5%BF%85%E7%9C%8B/" style="font-size: NaNpx; color: rgb(103, 105, 95)"><span>必看</span><sup>1</sup></a><a href="/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(119, 155, 104)"><span>结构型模式</span><sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: NaNpx; color: rgb(0, 173, 111)"><span>软考</span><sup>3</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: NaNpx; color: rgb(167, 69, 4)"><span>软件设计师</span><sup>3</sup></a></div></div><div class="console-card history" onclick="bywind.hideConsole()"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">七月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">十二月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span class="card-archive-list-count-unit">篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span class="card-archive-list-count-unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" onclick="rm.switchDarkMode()" title="显示模式切换" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-moon-clear-fill" style="font-size: 1rem;"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="bywind.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="hnfont icon-side-bar-fill"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="bywind.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="hnfont icon-keyboard-box-fill"></i></a></div><div class="console-btn-item" id="consoleCommentBarrage" onclick="bywind.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="hnfont icon-chat-1-fill"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="bywind.musicToggle()" title="音乐开关"><a class="music-switch"><i class="hnfont icon-disc-fill"></i></a></div><div class="console-btn-item" id="consoleFPS" onclick="bywind.FPSToggle()" title="帧率显示开关"><a class="FPS-switch"><i class="hnfont icon-fps-fill"></i></a></div></div><div class="console-mask" onclick="bywind.hideConsole()" href="javascript:void(0);" rel="external nofollow"></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><!--.avatar-img.is-center--><!--  img(src=url_for(theme.avatar.img) onerror=`onerror=null;src='${theme.error_img.flink}'` alt="avatar")--><!--.sidebar-site-data.site-data.is-center--><!--  a(href=url_for(config.archive_dir) + '/')--><!--    .headline= _p('aside.articles')--><!--    .length-num= site.posts.length--><!--  a(href=url_for(config.tag_dir) + '/' )--><!--    .headline= _p('aside.tags')--><!--    .length-num= site.tags.length--><!--  a(href=url_for(config.category_dir) + '/')--><!--    .headline= _p('aside.categories')--><!--    .length-num= site.categories.length--><!--hr--><span class="sidebar-menu-item-title">功能<div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" onclick="rm.switchDarkMode()" title="显示模式切换" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-moon-clear-fill" style="font-size: 1rem;"></i><span>显示模式</span></a></div></span><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw hnfont icon-archive-fill"></i><span> 文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw hnfont icon-category-fill"></i><span> 文章分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw hnfont icon-tags-fill"></i><span> 文章标签</span></a></li><li><a class="site-page child" href="/essay/"><i class="fa-fw hnfont icon-essay-fill"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw hnfont icon-disc-fill"></i><span> 音乐欣赏</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw hnfont icon-movie-fill"></i><span> 影视推荐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw hnfont icon-photo-share"></i><span> 忆念留影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 友链</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/moments/"><i class="fa-fw hnfont icon-rss-fill"></i><span> 友链鱼塘</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw hnfont icon-group-fill"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling();"><i class="fa-fw hnfont icon-gift-2-fill"></i><span> 宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/stars/"><i class="fa-fw hnfont icon-tools-fill"></i><span> 网址收藏</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw hnfont icon-home-message-fill"></i><span> 博客留言</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw hnfont icon-me-fill"></i><span> 关于本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签<div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="item-headline"><i class="hnfont icon-tags-fill"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size: NaNpx; color: rgb(10, 182, 150)"><span>Hexo</span><sup>5</sup></a><a href="/tags/Butterfly/" style="font-size: NaNpx; color: rgb(161, 129, 44)"><span>Butterfly</span><sup>5</sup></a><a href="/tags/Fiddler/" style="font-size: NaNpx; color: rgb(117, 181, 38)"><span>Fiddler</span><sup>1</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" style="font-size: NaNpx; color: rgb(24, 108, 19)"><span>主题美化</span><sup>1</sup></a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: NaNpx; color: rgb(113, 7, 113)"><span>图床</span><sup>1</sup></a><a href="/tags/SSM/" style="font-size: NaNpx; color: rgb(54, 13, 66)"><span>SSM</span><sup>1</sup></a><a href="/tags/LeetCode/" style="font-size: NaNpx; color: rgb(4, 125, 23)"><span>LeetCode</span><sup>2</sup></a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: NaNpx; color: rgb(46, 11, 105)"><span>算法</span><sup>2</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: NaNpx; color: rgb(87, 63, 165)"><span>计算机基础</span><sup>3</sup></a><a href="/tags/%E6%8E%A8%E8%8D%90/" style="font-size: NaNpx; color: rgb(97, 146, 30)"><span>推荐</span><sup>3</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(38, 58, 191)"><span>设计模式</span><sup>3</sup></a><a href="/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(142, 87, 129)"><span>创建型模式</span><sup>1</sup></a><a href="/tags/%E5%BF%85%E7%9C%8B/" style="font-size: NaNpx; color: rgb(78, 134, 160)"><span>必看</span><sup>1</sup></a><a href="/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(109, 110, 152)"><span>结构型模式</span><sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: NaNpx; color: rgb(13, 14, 28)"><span>软考</span><sup>3</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: NaNpx; color: rgb(49, 166, 34)"><span>软件设计师</span><sup>3</sup></a></div></div></span></div></div><div id="keyboard-tips" style="zoom:1"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">A</div></div><div class="keyContent"><div class="content">打开中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift</div><div class="key">P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><!--.avatar-img.is-center--><!--  img(src=url_for(theme.avatar.img) onerror=`onerror=null;src='${theme.error_img.flink}'` alt="avatar")--><!--.sidebar-site-data.site-data.is-center--><!--  a(href=url_for(config.archive_dir) + '/')--><!--    .headline= _p('aside.articles')--><!--    .length-num= site.posts.length--><!--  a(href=url_for(config.tag_dir) + '/' )--><!--    .headline= _p('aside.tags')--><!--    .length-num= site.tags.length--><!--  a(href=url_for(config.category_dir) + '/')--><!--    .headline= _p('aside.categories')--><!--    .length-num= site.categories.length--><!--hr--><span class="sidebar-menu-item-title">功能<div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" onclick="rm.switchDarkMode()" title="显示模式切换" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-moon-clear-fill" style="font-size: 1rem;"></i><span>显示模式</span></a></div></span><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw hnfont icon-archive-fill"></i><span> 文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw hnfont icon-category-fill"></i><span> 文章分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw hnfont icon-tags-fill"></i><span> 文章标签</span></a></li><li><a class="site-page child" href="/essay/"><i class="fa-fw hnfont icon-essay-fill"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw hnfont icon-disc-fill"></i><span> 音乐欣赏</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw hnfont icon-movie-fill"></i><span> 影视推荐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw hnfont icon-photo-share"></i><span> 忆念留影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 友链</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/moments/"><i class="fa-fw hnfont icon-rss-fill"></i><span> 友链鱼塘</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw hnfont icon-group-fill"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling();"><i class="fa-fw hnfont icon-gift-2-fill"></i><span> 宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/stars/"><i class="fa-fw hnfont icon-tools-fill"></i><span> 网址收藏</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw hnfont icon-home-message-fill"></i><span> 博客留言</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw hnfont icon-me-fill"></i><span> 关于本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签<div class="card-widget card-tags card-archives card-webinfo card-allinfo"><div class="item-headline"><i class="hnfont icon-tags-fill"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/Hexo/" style="font-size: NaNpx; color: rgb(10, 182, 150)"><span>Hexo</span><sup>5</sup></a><a href="/tags/Butterfly/" style="font-size: NaNpx; color: rgb(161, 129, 44)"><span>Butterfly</span><sup>5</sup></a><a href="/tags/Fiddler/" style="font-size: NaNpx; color: rgb(117, 181, 38)"><span>Fiddler</span><sup>1</sup></a><a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" style="font-size: NaNpx; color: rgb(24, 108, 19)"><span>主题美化</span><sup>1</sup></a><a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: NaNpx; color: rgb(113, 7, 113)"><span>图床</span><sup>1</sup></a><a href="/tags/SSM/" style="font-size: NaNpx; color: rgb(54, 13, 66)"><span>SSM</span><sup>1</sup></a><a href="/tags/LeetCode/" style="font-size: NaNpx; color: rgb(4, 125, 23)"><span>LeetCode</span><sup>2</sup></a><a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: NaNpx; color: rgb(46, 11, 105)"><span>算法</span><sup>2</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: NaNpx; color: rgb(87, 63, 165)"><span>计算机基础</span><sup>3</sup></a><a href="/tags/%E6%8E%A8%E8%8D%90/" style="font-size: NaNpx; color: rgb(97, 146, 30)"><span>推荐</span><sup>3</sup></a><a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(38, 58, 191)"><span>设计模式</span><sup>3</sup></a><a href="/tags/%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(142, 87, 129)"><span>创建型模式</span><sup>1</sup></a><a href="/tags/%E5%BF%85%E7%9C%8B/" style="font-size: NaNpx; color: rgb(78, 134, 160)"><span>必看</span><sup>1</sup></a><a href="/tags/%E7%BB%93%E6%9E%84%E5%9E%8B%E6%A8%A1%E5%BC%8F/" style="font-size: NaNpx; color: rgb(109, 110, 152)"><span>结构型模式</span><sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: NaNpx; color: rgb(13, 14, 28)"><span>软考</span><sup>3</sup></a><a href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: NaNpx; color: rgb(49, 166, 34)"><span>软件设计师</span><sup>3</sup></a></div></div></span></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover/image-2023072201.png')"><nav id="nav"><div id="nav-group"><div id="blog_name"><div class="back-home-button" tabindex="-1"><i class="back-home-button-icon hnfont icon-apps-fill"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://www.bywind.xyz/" title="主页" target="_blank"><img class="back-menu-item-icon" src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/mangguo.png"/><span class="back-menu-item-text">主页</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">博客</div><div class="back-menu-list"><a class="back-menu-item" href="https://blog.bywind.xyz/" title="博客" target="_blank"><img class="back-menu-item-icon" src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/boluo.png"/><span class="back-menu-item-text">博客</span></a></div></div></div></div><a id="site-name" href="/" title="返回博客主页"><i class="hnfont icon-home-fill"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" onclick="btf.scrollToDest(0,500)">随风起 - 分享知识与美好时光</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw hnfont icon-archive-fill"></i><span> 文章列表</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw hnfont icon-category-fill"></i><span> 文章分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw hnfont icon-tags-fill"></i><span> 文章标签</span></a></li><li><a class="site-page child" href="/essay/"><i class="fa-fw hnfont icon-essay-fill"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 导航</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw hnfont icon-disc-fill"></i><span> 音乐欣赏</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw hnfont icon-movie-fill"></i><span> 影视推荐</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw hnfont icon-photo-share"></i><span> 忆念留影</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 友链</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/moments/"><i class="fa-fw hnfont icon-rss-fill"></i><span> 友链鱼塘</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw hnfont icon-group-fill"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="javascript:travelling();"><i class="fa-fw hnfont icon-gift-2-fill"></i><span> 宝藏博主</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 我的</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/stars/"><i class="fa-fw hnfont icon-tools-fill"></i><span> 网址收藏</span></a></li><li><a class="site-page child" href="/comments/"><i class="fa-fw hnfont icon-home-message-fill"></i><span> 博客留言</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw hnfont icon-me-fill"></i><span> 关于本站</span></a></li></ul></div></div></div><div id="nav-left"><div id="fps-group"><div id="fps"></div><span class="fpsText">FPS</span></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" style="display: flex"><a class="site-page" target="_blank" rel="noopener external nofollow" href="https://www.travellings.cn/go.html" title="随机前往一个开往项目网站"><i class="hnfont icon-train-line"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章"><i class="hnfont icon-signal-tower-fill"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" title="搜索" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-search-line" style="font-size: 1rem;"></i></a></div><div class="nav-button" id="nav-console"><a class="console_switchbutton" onclick="bywind.showConsole()" title="显示中控台" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-dashboard-fill" style="font-size: 1rem;"></i></a></div><div class="nav-button" id="nav-totop"><a class="totopbtn" onclick="btf.scrollToDest(0,500)" title="回到顶部" href="javascript:void(0);" rel="external nofollow"><i class="hnfont icon-arrow-up-line"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="hnfont icon-menu-fill"></i></a></div></div></div></nav><div class="coverdiv" id="coverdiv"><img class="cover nolazyload" id="post-cover" alt="cover" src="/img/cover/image-2023072201.png"></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="本文为原创文章，注意版权协议" href="/cc/">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E8%80%83/"><span class="tags-name tags-punctuation">软考</span></a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"><span class="tags-name tags-punctuation">软件设计师</span></a></div></div></div></div><h1 class="post-title">软件设计师知识点整理（一）</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date"><i class="fa-fw post-meta-icon hnfont icon-calendar-fill"></i><span class="post-meta-label">发表于</span><time datetime="2023-07-23T15:22:06.000Z" title="发表于 2023-07-23 23:22:06">2023-07-23</time></span><!-- - let location = page.location ? page.location : theme.post_copyright.location--><span class="post-meta-position" title="作者IP属地为天津"><i class="hnfont icon-location-fill"></i>天津</span><!--span.post-meta-separator |--><span class="post-meta-wordcount"><i class="hnfont icon-file-word-fill post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">9.9k</span><span class="post-meta-separator"></span><i class="hnfont icon-stopwatch-fill post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>30分钟</span></span><!--span.post-meta-separator |--><span class="post-meta-pv" id="" data-flag-title="软件设计师知识点整理（一）"><i class="hnfont icon-fire-fill post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><!--span.post-meta-separator |--><span class="post-meta-commentcount" title="评论数" onclick="bywind.scrollTo(&quot;post-comment&quot;)"><i class="hnfont icon-chat-1-fill"></i><span class="post-meta-label">评论数:</span><a href="/posts/3e2b8eae.html#post-comment"><span id="twikoo-count"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p><a href="#">软件设计师知识点整理（一）</a><br> 一、计算机网络<br> 二、操作系统基本原理<br> 四、计算机组成原理与体系结构</p>
+<p><a href="/posts/aebcf5cb.html">软件设计师知识点整理（二）</a><br> 四、编译原理基础<br> 五、软件工程概述<br> 六、计算机软件法律法规</p>
+<p><a href="/posts/e3a25699.html">软件设计师知识点整理（三）</a><br> 七、系统安全设计与分析<br> 八、数据结构与算法基础<br> 九、数据库系统</p>
+</blockquote>
+<h2 id="一、计算机网络"><a href="#一、计算机网络" class="headerlink" title="一、计算机网络"></a>一、计算机网络</h2><h3 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h3><p>OSI 将计算机网络体系结构划分为七层，每一层实现各自的功能和协议，并完成与相邻层的接口通信。OSI 的服务定义详细说明了各层所提供的服务。</p>
+<ol>
+<li>应用层：通过应用程序间的交互来完成特定的网络应用</li>
+<li>表示层：解释交换数据的含义。该层提供的服务主要包括数据压缩，数据加密以及数据描述。</li>
+<li>会话层：负责建立、管理和终止表示层实体之间的通信会话。该层提供了数据交换的定界和同步功能，包括了建立检查点和恢复方案的方法。</li>
+<li>传输层：负责因特网中两台主机的进程提供通信服务。</li>
+<li>网络层：选择合适的网间路由和交换节点，确保数据按时成功传送。</li>
+<li>数据链路层(链路层)：数据链路层将网络层交下来的 IP 数据报组装成帧，在两个相邻节点间的链路上传送帧。</li>
+<li>物理层：实现计算机节点之间比特流的透明传送，尽可能屏蔽掉具体传输介质和物理设备的差异。该层的主要任务是确定与传输媒体的接口的一些特性（机械特性、电气特性、功能特性，过程特性）</li>
+</ol>
+<h3 id="TCP-x2F-IP-五层参考模型"><a href="#TCP-x2F-IP-五层参考模型" class="headerlink" title="TCP&#x2F;IP 五层参考模型"></a>TCP&#x2F;IP 五层参考模型</h3><ol>
+<li>应用层 ：为特定应用程序提供数据传输服务。</li>
+<li>传输层 ：为进程提供通用数据传输服务。</li>
+<li>网络层 ：为主机提供数据传输服务。而传输层协议是为主机中的进程提供数据传输服务。</li>
+<li>数据链路层 ：网络层针对的还是主机之间的数据传输服务，而主机之间可以有很多链路，链路层协议就是为同一链路的主机提供数据传输服务。</li>
+<li>物理层 ：负责比特流在传输介质上的传播。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003697.png" alt="image.png"></li>
+</ol>
+<h3 id="数据在各层传输过程"><a href="#数据在各层传输过程" class="headerlink" title="数据在各层传输过程"></a>数据在各层传输过程</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003820.png" alt="1675867690-lXXziw-image.png"><br>假设一个主机上的一个应用向另一个主机的一个应用发送数据。</p>
+<ol>
+<li>在发送主机端，一个应用层报文被传送到传输层。在最简单的情况下，传输层收取到报文并附上附加信息，该首部将被接收端的传输层使用。</li>
+<li>应用层报文和传输层首部信息一道构成了传输层报文段。附加的信息可能包括：允许接收端传输层向上向适当的应用程序交付报文的信息以及差错检测位信息。该信息让接收端能够判断报文中的比特是否在途中已被改变。</li>
+<li>传输层则向网络层传递该报文段，网络层增加了如源和目的端系统地址等网络层首部信息，生成了网络层数据报文。</li>
+<li>该数据报文接下来被传递给链路层，在数据链路层数据包添加发送端 MAC 地址和接收端 MAC 地址后被封装成数据帧。</li>
+<li>在物理层数据帧被封装成比特流，之后通过传输介质传送到对端。而在接收主机端，整个过程正好反过来。</li>
+</ol>
+<h3 id="网络技术标准与协议"><a href="#网络技术标准与协议" class="headerlink" title="网络技术标准与协议"></a>网络技术标准与协议</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003968.png" alt="image.png"><br>(1)<strong>IGMP</strong>：称之为因特网的控制协议<br>(2)<strong>ARP</strong>：是地址解析协议(即IP转MC）<br>(3)<strong>RARP</strong>：是反向地址解析协议(MC转IP）<br>(4)<strong>TCP</strong>：被称为可靠的协议，因其在通信时会建立连接(通过三次握手来建立连接，即A与B三次互发信息)，且在传输信息时有验证机制，以验证数据包是否顺利传输，其上方的FTP，Telnet等协议都是建立在TCP基础上的<br>(5)<strong>UDP</strong>：称为不可靠的协议，因其在建立时不会建立连接，因其在传输数据时，会直接将数据发送给另一方<br>(6)<strong>DHCP</strong>：用来做动态的IP地址的分配工作<br>(7)<strong>TFTP</strong>：是小文件传输协议，<code>文件传输不可靠且不安全</code><br>(8)<strong>SNMP</strong>：是简单网络管理协议<br>(9)<strong>DNS</strong>：是域名解析协议<br>(10)位于中间部分的Samba协议、CIFS协议、NFS协议则是可基于两种基本协议<br>(11)TCP和UDP均提供了端口寻址能力<br>(12)<strong>MIME</strong>：是一个互联网标准，扩展了电子邮箱标准，使其能够支持电子邮箱的使用<br>(13)<strong>PGP</strong>：是一套用于信息加密、验证的应用程序，可用于加密电子邮件内容<br>(14)<strong>Https</strong>：是HTTP的安全版，它是在HTTP的基础上加上了SSL协议，SSL依靠证书来验证服务器的身份，并为浏览器和服务器之间的通信加密<br>(15)<strong>FTP</strong>：文件传输是<code>可靠但不安全</code>的方式<br>(16)<strong>SFTP</strong>：在FTP基础上，通过SSH对传输文件进行加密，<code>安全文件传输</code><br>(17)<strong>ICMP</strong>：Internet控制报文协议，与文件传输功能无关<br>(18)<strong>SMTP</strong>：邮件传输协议，负责邮件发送，<code>端口：25</code><br>(19)<strong>POP</strong>：邮件协议，用于收邮件，<code>POP3端口：110</code><br>(20)<strong>IMAP</strong>：交互邮件访问协议<br>(21)<strong>RFB</strong>：远程帧缓冲协议，用于远程访问图形用户界面<br>(22)<strong>IGP</strong>：内部网关协议。常见的有OSPF，RIP<br>(23)<strong>EGP</strong>：外部网关协议。BGP：边界网关协议，是建立在EGP的经验之上的</p>
+<h3 id="网络类型与拓扑结构"><a href="#网络类型与拓扑结构" class="headerlink" title="网络类型与拓扑结构"></a>网络类型与拓扑结构</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003756.png" alt="image.png"></p>
+<h3 id="网络规划与设计"><a href="#网络规划与设计" class="headerlink" title="网络规划与设计"></a>网络规划与设计</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003936.png" alt="image.png"></p>
+<h4 id="逻辑网络设计"><a href="#逻辑网络设计" class="headerlink" title="逻辑网络设计"></a>逻辑网络设计</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003670.png" alt="image.png"></p>
+<h4 id="物理网络设计"><a href="#物理网络设计" class="headerlink" title="物理网络设计"></a>物理网络设计</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003321.png" alt="image.png"></p>
+<h4 id="分层设计"><a href="#分层设计" class="headerlink" title="分层设计"></a>分层设计</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003153.png" alt="image.png"></p>
+<h3 id="IP地址与子网划分"><a href="#IP地址与子网划分" class="headerlink" title="IP地址与子网划分"></a>IP地址与子网划分</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003987.png" alt="image.png"></p>
+<h4 id="特殊含义的IP地址"><a href="#特殊含义的IP地址" class="headerlink" title="特殊含义的IP地址"></a>特殊含义的IP地址</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003955.png" alt="image.png"></p>
+<h3 id="无线网"><a href="#无线网" class="headerlink" title="无线网"></a>无线网</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003905.png" alt="image.png"><br>图注：无线网可分为无线局域网、无线城域网、无线广域网、无线个人网；覆盖范围：个人&lt;局域&lt;城域&lt;广域;优势:移动性、灵活性、成本低、容易扩充；无线局域网的接入方式有两种:接入点模式、无接入点模式；蓝牙属于无线个人网</p>
+<h3 id="网络接入技术"><a href="#网络接入技术" class="headerlink" title="网络接入技术"></a>网络接入技术</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003544.png" alt="image.png"><br><strong>PSTN</strong>：在十多年前非常流行，其上网和通话功能不能同时进行，目前基本被淘汰，但pos机和传真依旧在使用；<br><strong>ISDN</strong>：解决了上网和通话不能同时进行的问题，速度达到128KB；<br><strong>ADSL</strong>：是ISDN的发展，目前是主流的有线网络接入方式，速度达到了8MBS；ADSL上网拨号有三种方式，即专线方式(静态IP)、pppoA和pppoE。<br><strong>HFC</strong>：目前广泛用于电视机接入网络；<br><strong>TD—SCDMA</strong>：是国产的技术，只在中国应用，由移动公司主导推广；目前最为广泛应用的技术是WCDMA，而FDD则是其发展版本，<br><strong>TDD</strong>：是LTE—Advanced发展而来，是4G时代智能机的主流接入网络的方式</p>
+<h3 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307240003688.png" alt="image.png"></p>
+<h2 id="二、操作系统基本原理"><a href="#二、操作系统基本原理" class="headerlink" title="二、操作系统基本原理"></a>二、操作系统基本原理</h2><p>ps：在上午考试中一般占到5—7分<br>重点：银行家算法、pv操作、文件管理、存储管理、操作系统的分类及其特点</p>
+<h3 id="操作系统概述"><a href="#操作系统概述" class="headerlink" title="操作系统概述"></a>操作系统概述</h3><p>操作系统与计算机体系结构之间的关系<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232335192.png" alt="image.png"><br>操作系统具备的管理职能</p>
+<ol>
+<li>进程管理：包括(1)进程的状态；(2)前趋图；(3)pv操作；(4)死锁问题。</li>
+<li>存储管理：包括(1)段页式存储；(2)页面置换算法。</li>
+<li>文件管理：包括(1)索引文件；(2)位示图。</li>
+<li>作业管理</li>
+<li>设备管理 包括：数据传输控制方式</li>
+<li>微内核操作系统：包括虚设备与SPOOLING技术</li>
+</ol>
+<h3 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h3><h4 id="进程的三种基本状态"><a href="#进程的三种基本状态" class="headerlink" title="进程的三种基本状态"></a>进程的三种基本状态</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232335318.png" alt="image.png"><br>图注：<br>等待状态下的程序缺少除cpu资源以外的其他资源，如用户指令或外设支持等资源；<br>就绪状态的程序除了CPU资源以外的所有资源都已经准备就绪；<br>处于就绪状态的程序需要排队获取CPU资源，且即使获取到了CPU资源，他们的运行时间也是有限的，因此，时间片到了以后就会从运行状态退出到就绪状态，而程序在运行时出现了某些资源的缺失则会退出至等待状态.</p>
+<h4 id="进程的五态模型-三态模型的发展"><a href="#进程的五态模型-三态模型的发展" class="headerlink" title="进程的五态模型(三态模型的发展)"></a>进程的五态模型(三态模型的发展)</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232335349.png" alt="image.png"><br>图注：<br>该模型是三态模型的发展，将就绪状态分为了静止就绪和活跃就绪，静止就绪是该进程已经获得了CPU资源，但由于人为需要，由运行状态将其退出至就绪状态，如我们在听歌时突然来了电话，我们暂时将音乐关闭，这种人为的将程序由运行态转至的就绪态，即为静止就绪，再次调动该程序时，该程序就将由静止就绪转至活跃就绪进而被调用；<br>此外，阻塞态即为三态模型中的等待态</p>
+<h4 id="进程控制块的组织方式"><a href="#进程控制块的组织方式" class="headerlink" title="进程控制块的组织方式"></a>进程控制块的组织方式</h4><p>分为索引方式和链接方式</p>
+<ol>
+<li>链接方式：把具有同一状态的进程(PCB)，用其中的链接字链接成一个队列。这样，可以形成就绪队列、若干个阻塞队列和空白队列等。对其中的就绪队列常按进程优先级的高低排列，把优先级高的进程排在队列前面。此外，也可以根据阻塞原因的不同而把处于阻塞状态的进程的PCB排成等待I&#x2F;O操作完成的队列和等待分配内存的队列等</li>
+<li>索引方式：系统根据所有进程的状态建立若干索引表。例如，就绪索引表、阻塞索引表等，并把各索引表在内存的首地址记录在内存的一些专用单元中。在每个索引表的表目中，记录具有相应状态的某个PCB在PCB表中的位置</li>
+</ol>
+<h4 id="前趋图"><a href="#前趋图" class="headerlink" title="前趋图"></a>前趋图</h4><ol>
+<li>概念：前趋图是将一个完整的进程所需的工序按照是否具有先后关系将进程进行再次区分的图象</li>
+<li>示例</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232335375.png" alt="image.png"><br>图注：A,B,C三个步骤是平行的，他们之间可以并行，这样可以增大CPU的处理效率。</p>
+<h4 id="进程的同步与互斥"><a href="#进程的同步与互斥" class="headerlink" title="进程的同步与互斥"></a>进程的同步与互斥</h4><p><strong>进程的同步</strong></p>
+<ol>
+<li>概念：运行速度有差异的两个进程同时开始运行，在一定情况下，速度较快的进程会停下来等待速度较慢的进程</li>
+<li>示例：</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232335255.png" alt="image.png"></p>
+<p><strong>进程的互斥</strong></p>
+<ol>
+<li>概念：在同一时刻只允许某一个进程使用资源，即同一资源不能服务于多个进程</li>
+<li>示例：</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336635.png" alt="image.png"></p>
+<h4 id="PV操作"><a href="#PV操作" class="headerlink" title="PV操作"></a>PV操作</h4><ol>
+<li>临界资源：诸进程间需要互斥方式对其进行共享的资源，如打印机，磁带机等。</li>
+<li>临界区：每个进程中访问临界资源的那段代码称为临界区。</li>
+<li>信号量：是一种特殊的变量，符号为s，只用于pv操作</li>
+</ol>
+<p>用PV操作控制进程同步与互斥时，应该在进程执行前执行P操作，在进程执行后执行V操作<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336049.png" alt="image.png"><br>单缓冲区生产者、消费者问题PV原语描述<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336507.png" alt="image.png"></p>
+<h4 id="pv操作与前趋图"><a href="#pv操作与前趋图" class="headerlink" title="pv操作与前趋图"></a>pv操作与前趋图</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336901.png" alt="image.png"><br>图注：这种例题通过观察箭头的指向来解题，被指箭头用p操作，指向箭头就用v操作，有几个箭头就用几次。</p>
+<h4 id="死锁问题"><a href="#死锁问题" class="headerlink" title="死锁问题"></a>死锁问题</h4><p>死锁：各进程互相等待对方手里的资源，导致各进程都阻塞，无法向前推进的现象。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336069.png" alt="image.png"><br>最少需要(4+4+4)+1&#x3D;13个资源</p>
+<p><strong>发生死锁的四大必要条件</strong></p>
+<ol>
+<li>进程互斥</li>
+<li>保持和等待：在资源总量并未满足完成进程所需资源的总量前提下，每个进程都保持自身占用的资源不变并且一直等待其他进程完成以获取其释放的系统资源</li>
+<li>不剥夺：系统不会把已分配给一个进程的资源剥夺掉分配给其他进程</li>
+<li>环路等待：如总共有三个进程，A等待B，B等待C，C等待A;诸如此类的，等待的进程形成了一个闭合环状</li>
+</ol>
+<p>注：死锁的预防就是通过打破四大条件来进行</p>
+<p><strong>死锁的避免</strong></p>
+<p>有两大方法，分别是：<br>1.有序资源分配法：将系统资源按照顺序分配给进程，一个进程完成后才将资源分配给下一个进程<br>2.银行家算法</p>
+<p><strong>资源分配图</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336547.png" alt="image.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336929.png" alt="image.png"></p>
+<ul>
+<li>如果系统中剩余的可用资源数足够满足进程的需求，那么这个进程暂时是不会阻塞的，可以顺利地执行下去。</li>
+<li>如果这个进程执行结束了把资源归还系统，就可能使某些正在等待资源的进程被激活，并顺利地执行下去。</li>
+<li>相应的，这些被激活的进程执行完了之后又会归还一些资源．这样可能又会激活另外一些阳塞的讲程.</li>
+</ul>
+<p><strong>银行家算法</strong><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336574.png" alt="image.png"></p>
+<h3 id="存储管理"><a href="#存储管理" class="headerlink" title="存储管理"></a>存储管理</h3><h4 id="分区存储组织"><a href="#分区存储组织" class="headerlink" title="分区存储组织"></a>分区存储组织</h4><ul>
+<li>首次适应法：首次适应法会把即将执行的作业安排在第一个能够容纳它的空间</li>
+<li>最佳适应法：该算法优先将作业存放至内存空间较小的地址。空闲区块按大小顺序连接。当前空闲的三个块分别是25,28,10。当他发现10k已经放得下，就分配出去了。该算法会造成内存空间碎片化，降低内存地址的利用率</li>
+<li>最差适应法：该算法优先将作业存放至内存空间最大的地址。该算法能够解决内存空间碎片化的问题</li>
+<li>循环首次适应法：每次为进程分配空间的时候，从<strong>上一次刚分配过的空闲区的下一块</strong>开始寻找</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336788.png" alt="image.png"></p>
+<h4 id="页式存储、段式存储、段页式存储"><a href="#页式存储、段式存储、段页式存储" class="headerlink" title="页式存储、段式存储、段页式存储"></a>页式存储、段式存储、段页式存储</h4><blockquote>
+<p>此部分参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/imreal_/article/details/113965349">https://blog.csdn.net/imreal_&#x2F;article&#x2F;details&#x2F;113965349</a></p>
+</blockquote>
+<h4 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336528.png" alt="image.png"><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35128300/article/details/109217440">https://blog.csdn.net/qq_35128300&#x2F;article&#x2F;details&#x2F;109217440</a><br>页面的大小为100个字节，则460个字节应占5页，编号为0～4，第0页字节为0～99，第1页为100～199，依此类推。得到页面的访问序列是(0，0，1，1，0，3，1，2，2，4，4，3)，可简化为(0，1，0，3，1，2，4，3)。</p>
+<h4 id="最佳页面置换算法（OPT）"><a href="#最佳页面置换算法（OPT）" class="headerlink" title="最佳页面置换算法（OPT）"></a>最佳页面置换算法（OPT）</h4><p>既然带着最佳，就是最理想的算法<br>一句话：比比当前三个，谁将来最远被用淘汰谁<br>思想：为调入新页面而必须预先淘汰某个老页面时，所选择的老页面应在将来不被使用，或者是<strong>在最远的将来才被访问</strong>。以此保证获得最低的缺页率。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336331.png" alt="image.png"><br><strong>优点：</strong>性能最佳，缺页中断率最低。<strong>缺点：</strong>理想化的算法，无法实现。因为它需要预先知道一个进程整个运行过程中页面走向的全部情况。<strong>作用：</strong>模拟实验分析或理论分析其他算法的优劣。</p>
+<h4 id="先进先出法（FIFO）"><a href="#先进先出法（FIFO）" class="headerlink" title="先进先出法（FIFO）"></a>先进先出法（FIFO）</h4><p>很容易理解<br><strong>思想：</strong>为调入新页面而必须预先淘汰某个老页面时，<strong>总是淘汰在内存中停留时间最长的一页</strong>，即先进入内存的页，先被换出<br><strong>实现方法</strong></p>
+<ol>
+<li>计时器。在页面上加计时器记录最早进入的页。</li>
+<li>队列。只需把调入内存的页面根据先后次序链接成队列，设置一个指针总是指向队首的页面。</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336390.png" alt="image.png"><br><strong>优点：</strong>容易理解，实现简单，方便程序设计。<strong>缺点：</strong>性能不好。因为常被访问的页，通常在内存中停留最久。仅当按线性顺序访问地址空间时，才是最理想的，否则效率不高。<strong>作用：</strong>作为基础算法被应用在其他算法中。</p>
+<h4 id="最近最少使用置换法（LRU）"><a href="#最近最少使用置换法（LRU）" class="headerlink" title="最近最少使用置换法（LRU）"></a>最近最少使用置换法（LRU）</h4><p>一句话：看看之前的谁最久没用过，就淘汰谁<br><strong>Least Recently Used。</strong>也称“最近最久未使用置换法”。<strong>思想：</strong>当需要置换一页时，选择在最近一段时间里最久没有使用过的页面予以淘汰。<strong>理由：</strong>认为过去一段时间内未被访问过的页面，在最近的将来可能也不会被访问。<br><strong>实现方法</strong>1、计数器。要求在硬件上有一个64位的计数器C（给CPU增加一个计数器C），每条指令执行完后，C的值自动加1 。在每个页表项中，增加一个“使用时间”字段（时间戳）。每一次内存访问后，C的值就被复制到被访问页面的“使用时间”字段中。系统始终保留着每个页面最后被访问的“时间”，淘汰该时间值最小的页面，即最近最久未被使用的页面。<br>2、栈。<br>用一个栈保留页号，每访问一个页面时，就把它从栈中取出，放入栈顶。要用具有首指针和尾指针的双向链把各个栈单元连起来。<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336079.png" alt="image.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336592.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336038.png" alt="image.png"><br>图注：”没有使用快表“即表示每读一次程序的块，需要先在内存上面查表，才能读取相应的内存块，所以每一个块需要两次内存的访问，所以6个块(在页式存储结构中，每一个页面对应一个块)总共会产生12次对内存的访问;一个内存单元占据1b的内存，所有的指令(无论占据了几个页面)都只产生一次缺页中断，而操作数A和操作数B则各自产生两次缺页中断，因此总共产生了5次缺页中断</p>
+<h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><h4 id="索引文件结构"><a href="#索引文件结构" class="headerlink" title="索引文件结构"></a>索引文件结构</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336463.png" alt="image.png"></p>
+<p>图注：索引一般会有13个节点(默认情况下)，从0开始编号，其中索引0到9这十个索引称为直接索引，直接对应物理盘块，每一个物理盘块都对应了索引文件的内容，而索引10则称为间接索引，里面只存储地址，如一个物理盘块的地址大小为4个字节，而一个物理盘块的大小为4k，则4k\4字节等于1024，代表着1024个物理盘块的地址，因此该索引内可以存储的文件大小为4k<em>1024；该10号索引称之为一级间接索引；索引11则是二级间接索引，即索引的内容还是索引，再索引的内容才是物理盘块<br>，二级简介索引存储的文件大小即为：4k</em>1024*1024；虽然分级越多存储的内容越多，但相应的，效率也会更低</p>
+<h4 id="文件和数型结构目录"><a href="#文件和数型结构目录" class="headerlink" title="文件和数型结构目录"></a>文件和数型结构目录</h4><p>树型目录结构的路径<br>1.绝对路径：是从盘符开始的路径<br>2.相对路径：是从当前路径开始的路径<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336684.png" alt="image.png"></p>
+<p>图注：在该文件树型图中，若文件目录的位置是D1，若要求f2的路径，则绝对路径：&#x2F;D1&#x2F;W2&#x2F;F2；相对路径：W2&#x2F;F2<br>文件属性及文件名的组成<br>1.文件属性：R：只读文件属性 A：存档属性 S：系统文件 H：隐藏文件<br>2.文件名的组成：驱动器号；路径；主文件名；扩展名</p>
+<h4 id="空闲存储空间的管理"><a href="#空闲存储空间的管理" class="headerlink" title="空闲存储空间的管理"></a>空闲存储空间的管理</h4><p>总共有四种管理方法，分别是：空闲区表法；空闲链表法；位示图法；成组链接法<br>空闲区表法<br>1.概念：我们可以用一个表来记录哪些地方是空闲的，以便将其管理起来<br>空闲链表法<br>1.概念：把空闲区域都链起来，链成一条链表，然后需要空间分配的时候，从这条链表中划出一部分出来即可<br>位示图法(重点)<br>常以计算题方式考察<br>1.概念:将所有存储区域分成无数个物理块，然后以1表示被占用，0表示空闲，将所有空间进行标记<br>2.例题：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336437.png" alt="image.png"></p>
+<p>图注：4195号是第4196个位，因此4196&#x2F;32&#x3D;131.125；因此物理块的使用情况应该在第132个字中描述<br>成组链接法</p>
+<h3 id="设备管理"><a href="#设备管理" class="headerlink" title="设备管理"></a>设备管理</h3><h4 id="数据传输控制方式"><a href="#数据传输控制方式" class="headerlink" title="数据传输控制方式"></a>数据传输控制方式</h4><p>主要是指内存和外设之间的数据传输控制问题，解决方式包括：程序控制方式；程序中断方式；DMA方式；通道；输入输出处理机；前三种要求重点掌握<br>程序控制方式<br>1.概念：也称程序查询方式，由这种方式是最为低级的，也是CPU介入最多的一种机制，即整个数据的传输控制很多时候都要CPU的介入，此时外设会处于非常被动的位置，即不会主动的去返回信息，如是否完成等信息，而是由CPU主动发出查询指令，进而对信息进行查询<br>程序中断方式<br>1.概念：大部分与程序控制方式相同，但相较于程序控制方式，由于增加了中断方式，主动性更强，即：如果外设完成了数据的传输等操作，外设会发出中断指令，效率比程序控制方式更高<br>DMA方式<br>1.概念：也称直接存储器存取方式，在该方式中，会有专门的DMA控制器，只要是外设和内存之间的数据交换过程，就由这个控制器进行管控了，CPU只需要在开头的时候做一些介入，如初始化等操作<br>设备管理的五个层次<br>由上到下依次是：用户进程、与设备无关的系统软件、设备驱动程序、中断处理程序、硬件</p>
+<h3 id="虚设备与SPOOLING技术"><a href="#虚设备与SPOOLING技术" class="headerlink" title="虚设备与SPOOLING技术"></a>虚设备与SPOOLING技术</h3><p>SPOOLING技术<br>1.概念：例如：四个人通过远程手段准备使用一台打印机，而这台打印机在同一段时间内只能让一个用户使用，若一个用户正在使用该打印机，另一名用户试图使用该打印机时就会提示该打印机被占用，，事实上这样做使得打印机的技术非常的低，而面对这个问提，采用了SPOOLING技术的打印机会进行如下操作：给打印机创建一个缓存区，每一个用户在打印时都会进入缓存区，而从缓存区到真正打印则需要挨个排队，即打印机在打印时不再排斥其他用户的打印操作，而是将其缓存起来，在将当前操作完成后立即进行第二个操作，这样做不仅使得用户的操作界面变得更为友好，也极大的提高了打印机的打印效率</p>
+<h3 id="微内核操作系统"><a href="#微内核操作系统" class="headerlink" title="微内核操作系统"></a>微内核操作系统</h3><p>即把内核做得更小的操作系统<br>1.概念：把内核做的更小具有许多好处与优势，如提高了可靠性，稳定性，安全性；因为操作系统作为核心的系统软件，如果操作系统出现故障，就会影响整个系统的运行，将内核做的更小就会降低故障的发生率<br>2.单体内核和微内核的区别及各自优缺点如下图所示<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232336168.png" alt="image.png"><br>Linux系统的常用命令<br>attrib：声明<br>modify：修改<br>chmod：修改文件权限<br>change：改变</p>
+<h2 id="三、计算机组成原理与体系结构"><a href="#三、计算机组成原理与体系结构" class="headerlink" title="三、计算机组成原理与体系结构"></a>三、计算机组成原理与体系结构</h2><h3 id="数据的表示"><a href="#数据的表示" class="headerlink" title="数据的表示"></a>数据的表示</h3><h4 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h4><ol>
+<li>R进制转十进制：将每一位数字用R^k表示然后相加，k与该位与小数点的距离有关，小数点左边第一位为0，右边第一位为-1，往左递增，网往右递减，如：二进制数10100.01&#x3D;1<em>2^4+1</em>2^2+1*2^-2</li>
+<li>十进制转R进制：整数位使用短除法，即将十进制数除以R再取余，直至余数为零，然后将余数由下往上按顺序排列，小数位乘以R，每乘一次就取它的整数位（ 整数位为零时就取零)，直至小数位为零，然后将取得的整数位由上往下排列即可。</li>
+</ol>
+<p>例如：94转二进制<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305811.png" alt="image.png"></p>
+<ol start="3">
+<li>二进制转八进制及二进制转十六进制：将二进制数以小数点为界向左及向右每三个一组(转八进制),或者每四个一组(转十六进制)，缺的数用零来补充，然后依次转化为相应的进制数然后按顺序排列即可</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305744.png" alt="image.png"></p>
+<h4 id="原码反码补码移码"><a href="#原码反码补码移码" class="headerlink" title="原码反码补码移码"></a>原码反码补码移码</h4><p><strong>原码</strong><br><strong>数值直接转为二进制数，负数的最高位置1。</strong><br>以8位为例：<br>+1的原码为0000 0001，-1的原码为1000 0001.<br>+127的原码为0111 1111，-127的原码为1111 1111.<br>+0的原码为0000 0000，-0的原码为1000 0000.</p>
+<p><strong>反码</strong><br><strong>①正数的反码和原码相同</strong><br><strong>②负数的反码，在原码基础上，符号位不变，其余各位取反</strong><br>以8位为例：<br>-1的反码为1111 1110<br>-127的反码为1000 0000<br>-0的反码为1111 1111</p>
+<p><strong>补码</strong><br><strong>①正数的补码和原码相同</strong><br><strong>②负数的补码，在反码基础上，加一</strong><br>以8位为例：<br>-1的补码为1111 1111<br>-127的补码为：1000 0001<br>+0的补码&#x3D;-0的补码，为0000 0000</p>
+<p><strong>移码</strong><br><strong>移码的符号位与补码相反，数值位与补码相同</strong><br>移码&#x3D;补码+偏移量<br>当机器字长为8，偏移量为127时，移码&#x3D;补码最高位取反。<br>原码和反码的+0和-0是不同的表示，而补码表示上是一致的。<br>-128的补码是1000 0000<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305851.png" alt="image.png"></p>
+<h4 id="浮点数运算"><a href="#浮点数运算" class="headerlink" title="浮点数运算"></a>浮点数运算</h4><ol>
+<li>浮点数的概念：浮点数即科学计数法，如1000&#x3D;1X10^3; 其中，1为尾数，10为基数，3为指数（阶码）。</li>
+<li>计算机中浮点数的运算：当两个指数不等的浮点数相加时，计算机会把低阶浮点数的指数转化为高阶浮点数的指数，如：1.0X10^3+1.19X10^2,计算机会将1.19X10^2转化为0.119X10^3,然后作和，然后结果格式化(即通过指数的转化保证尾数必须为非零的一位数)如：得到11.3019X10^3以后，要化为1.13019X10^4</li>
+</ol>
+<h3 id="计算机结构"><a href="#计算机结构" class="headerlink" title="计算机结构"></a>计算机结构</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305976.png" alt="image.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305016.png"></p>
+<h3 id="Flynn分类法"><a href="#Flynn分类法" class="headerlink" title="Flynn分类法"></a>Flynn分类法</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232305654.png" alt="image.png"></p>
+<h3 id="CISC与RISC（指令系统）"><a href="#CISC与RISC（指令系统）" class="headerlink" title="CISC与RISC（指令系统）"></a>CISC与RISC（指令系统）</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306573.png" alt="image.png"></p>
+<h3 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><ol>
+<li>概念：流水线是指在程序执行时多条指令重叠进行操作的一种准并行处理实现技术。各种部件同时处理是针对不同指令而言的，他们可以同时为多条指令的不同部分进行工作，以提高各部分的利用率和指令的平均执行速度</li>
+<li>流程：</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306024.png" alt="image.png"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306917.png" alt="image.png"></p>
+<h4 id="流水线周期及流水线执行时间计算"><a href="#流水线周期及流水线执行时间计算" class="headerlink" title="流水线周期及流水线执行时间计算"></a>流水线周期及流水线执行时间计算</h4><ol>
+<li>流水线周期计算：流水线周期为执行时间最长的一段</li>
+<li>流水线执行时间计算：</li>
+</ol>
+<p>(1)理论公式：1条指令完整执行的时间+(指令条数-1) × 流水线周期；<br>(2)实际公式(实际生产中工厂往往采用该方法，因为该方法效率更高)：(一个完整指令的步骤数+指令条数-1) × 流水线周期；<br>注：计算时优先用理论公式，选项中没有该答案时再采用实际公式</p>
+<h4 id="流水线吞吐率计算"><a href="#流水线吞吐率计算" class="headerlink" title="流水线吞吐率计算"></a>流水线吞吐率计算</h4><ol>
+<li>概念：是指在单位时间内流水线所完成的任务数量或输出的结果数量</li>
+<li>计算公式：TP&#x3D;指令条数&#x2F;流水线执行时间</li>
+<li>流水线最大吞吐率计算公式：$TP_{max}&#x3D; \lim_{n \to \infty} \frac{n}{(k+n-1)\Delta t} &#x3D;\frac{1}{\Delta t}$，其中$\Delta t$是流水线周期</li>
+</ol>
+<h4 id="流水线的加速比"><a href="#流水线的加速比" class="headerlink" title="流水线的加速比"></a>流水线的加速比</h4><ol>
+<li>概念：完成同样一批任务，不使用流水线所用的时间与使用流水线所用的时间之比称为流水线的加速比</li>
+<li>加速比计算公式：不使用流水线的执行时间&#x2F;使用流水线执行时间</li>
+</ol>
+<h4 id="流水线的效率"><a href="#流水线的效率" class="headerlink" title="流水线的效率"></a>流水线的效率</h4><ol>
+<li>概念：指流水线的设备利用率</li>
+<li>计算公式：E&#x3D;n个任务占用的时空区&#x2F;k个流水段的总的时空区&#x3D;$\frac{T_{0}}{k*T_{k}}$；即从图形面积求解面积</li>
+</ol>
+<p>如：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306949.png" alt="image.png"><br>T0&#x3D;（1+1+1+3）△t × 4&#x3D;24△t<br>E&#x3D; 24&#x2F;(15×4)&#x3D;0.4<br>注：所有步骤花费时间相等的指令执行的效率最高<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306005.png" alt="image.png"><br>流水线执行时间：理论公式： 5+（100-1）* 2&#x3D;203<br>实际公式：（3+100-1）* 2&#x3D;204<br>吞吐率：TP&#x3D;100&#x2F;203<br>最大吞吐率：TPmax&#x3D;1&#x2F;2<br>加速比：（2+2+1）* 100&#x2F;203&#x3D;500&#x2F;203</p>
+<h3 id="存储系统"><a href="#存储系统" class="headerlink" title="存储系统"></a>存储系统</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306052.png" alt="image.png"></p>
+<h4 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h4><ol>
+<li>cache的功能：提高CPU输入输出的速率，突破冯诺依曼瓶颈，即CPU与存储器系统间数据传送带宽限制，在程序执行过程中，Cache与主存的地址映射是由硬件自动完成的。</li>
+<li>与cache相关的计算：如果以h代表对cache的访问命中率，t1表示cache的周期时间，t2表示主存储器周期时间，以读操作为例，使用“cache+主存储器”的系统的平均周期为t3，则：t3&#x3D;h*t1+(1-h)*t2；其中，(1-h)又称为失效率(未命中率)。</li>
+</ol>
+<blockquote>
+<p>注：CPU会在cache中寻找它需要的数据，如果不能找到，CPU就将前往内存中寻找，而chche的访问命中率就是CPU需要的数据在cache中被找到的比例，未能找到的数据CPU将前往内存中进行再次寻找</p>
+</blockquote>
+<ol start="3">
+<li>内存与cache地址映射的三种方式：cache与内存的地址映像方式有三种，分别是直接映像(cache的区号与内存的区号一一对应)、全相连映像(cache的一个块号可以对应多个内存的块号，内存的一个块号也可以对应cache的多个块号)，组相连映像(即两种方式相结合的方法)</li>
+</ol>
+<blockquote>
+<p>注：这三种映射方式都是计算机硬件自动完成的，不是软件</p>
+</blockquote>
+<ol start="4">
+<li>替换算法：替换算法的目的是使cache获得尽可能高的命中率，有以下四种：随机替换算法、先进先出算法、近期最少使用算法、优化替换算法</li>
+</ol>
+<blockquote>
+<p>注：现代的计算机cache系统是分为了三个级别的，访问时先从第一层开始访问，直至三个级别的cache都被访问完全时才会访问内存</p>
+</blockquote>
+<ol start="5">
+<li>虚拟存储器：即cpu在给出需要访问的内存地址时，给出的并不是真正的物理地址，而是物理地址的抽象，虚拟存储器是由主存-辅存两级存储器组成</li>
+</ol>
+<h4 id="主存"><a href="#主存" class="headerlink" title="主存"></a>主存</h4><p><strong>主存的分类</strong></p>
+<ol>
+<li>随机存取存储器：简称RAM，断电后所有数据都将清除，有两类RAM：<strong>静态RAM</strong>(SRAM)和<strong>动态RAM</strong>(DRAM)，SRAM比DRAM速度更快，但价格也更贵。<ol>
+<li>SRAM用来作为高速缓冲存储器(Cache)，DRAM用来作为主存及图形系统的帧缓冲区。</li>
+<li>SRAM将每个位存储在一个双隐态的存储器单元中，DRAM将每个位存储为对一个电容的充电，由于电容非常小，在10~100ms时间内会失去电荷，所以需要周期性地刷新充电以保持信息</li>
+</ol>
+</li>
+<li>只读存储器：简称ROM，断电后仍然能够存储信息</li>
+</ol>
+<p><strong>主存的编址</strong><br>1.概念：主存的编址就是把许多块芯片组成相应的存储器<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306407.png" alt="image.png"></p>
+<blockquote>
+<p>注：一般表示方式如下图，其中左图一中的8表示它有8个地址空间，4表示每一个地址空间存储了4位的信息，而两个图一则可以拼接为图二，两个图二可以拼接为图三</p>
+</blockquote>
+<p>2.编址相关计算：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306193.png" alt="image.png"></p>
+<blockquote>
+<p>图注：其中H表示十六进制，存储单元数量等于大的内存地址减去小的内存地址再加上一；K&#x3D;1024，第一个空即为存储单元数量除以1024<br>解题步骤：<br>C7FFFH-AC000H+1&#x3D;C7FFFH+1-AC000H&#x3D;C8000H-AC000H&#x3D;1C000H<br>1C000H&#x3D;12×16^3+16^4，所以共有（12×16^3+16^4）&#x2F;1024&#x3D;112 K个地址单元<br>总容量112K×16，存储位数为(112K×16)&#x2F;(28×16K)&#x3D;4</p>
+</blockquote>
+<h4 id="磁盘结构与参数"><a href="#磁盘结构与参数" class="headerlink" title="磁盘结构与参数"></a>磁盘结构与参数</h4><p>存取时间&#x3D;寻道时间+等待时间<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306220.png" alt="image.png"><br>最长时间为（33+3）×10+6&#x3D;366ms<br>对信息存储进行优化分布后，结果为下图<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306789.png" alt="image.png"><br>读完R1后恰好可以进行读取R1、R2…….，所以最少时间为两圈，66ms</p>
+<h3 id="总线系统"><a href="#总线系统" class="headerlink" title="总线系统"></a>总线系统</h3><p><strong>概念</strong>：总线是连接计算机有关部件的一组信号线，是计算机中用来传送信息代码的公共通道。<br>根据总线所处的位置不同，总线通常被分成三种类型</p>
+<ol>
+<li>内部总线：微机内部的，各个外围芯片与处理器之间的总线，属于芯片级别</li>
+<li>系统总线：系统总线即为各个插线板和系统板之间的总线；包括<ol>
+<li>(1)数据总线：如32位，64位等一次性能够传输的位</li>
+<li>(2)地址总线：假设该计算机的地址总线为32位，那就代表它的地址空间为2^32个字节</li>
+<li>(3)控制总线：发送相应的控制信号的总线</li>
+</ol>
+</li>
+<li>外部总线：即微机和外部设备的总线</li>
+</ol>
+<p>注：总线上的多个部件之间只能分时向总线发送数据，但可以同时从总线接收数据</p>
+<h3 id="系统可靠性分析与设计"><a href="#系统可靠性分析与设计" class="headerlink" title="系统可靠性分析与设计"></a>系统可靠性分析与设计</h3><h4 id="串联系统"><a href="#串联系统" class="headerlink" title="串联系统"></a>串联系统</h4><ol>
+<li>串联系统的结构：只要一个子系统失效，则整个系统都将失效</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306945.png" alt="image.png"></p>
+<ol start="2">
+<li>串联系统可靠性的计算：即各个串联子系统可靠性相乘，如上图，其中R为可靠性，此外，1-可靠性即为失效率，而总的失效率即为串联各个部件的失效率作和(近似计算)</li>
+</ol>
+<h4 id="并联系统"><a href="#并联系统" class="headerlink" title="并联系统"></a>并联系统</h4><ol>
+<li>并联系统的结构 注：少数子系统的失效将不会影响整个系统</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306825.png" alt="image.png"></p>
+<ol start="2">
+<li>并联系统可靠性的计算：通过计算失效率来求得可靠性，即各个子系统的失效率相乘，再由1减去它，即可得到系统可靠性</li>
+</ol>
+<h4 id="模冗余系统与混合系统"><a href="#模冗余系统与混合系统" class="headerlink" title="模冗余系统与混合系统"></a>模冗余系统与混合系统</h4><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232306621.png" alt="image.png"><br>图片解释：数据输入n个子系统中，它们各自得出自己的结果，然后汇总到表决器，表决器将遵循少数服从多数的原则，输出大多数子系统得到的那个答案然后进行输出</p>
+<h3 id="差错控制-CRC与海明校验码"><a href="#差错控制-CRC与海明校验码" class="headerlink" title="差错控制-CRC与海明校验码"></a>差错控制-CRC与海明校验码</h3><h4 id="检错与纠错"><a href="#检错与纠错" class="headerlink" title="检错与纠错"></a>检错与纠错</h4><ol>
+<li>检错：将错误检查出来</li>
+<li>纠错：将错误检查出来的同时并进行纠正</li>
+</ol>
+<h4 id="码距及其作用"><a href="#码距及其作用" class="headerlink" title="码距及其作用"></a>码距及其作用</h4><ol>
+<li>码距的概念：指整个编码系统中任意两个码字的最小距离,如A变化X个位得到B，则X就为码距，如：若使用2位长度的二进制编码，若以A&#x3D;11，B&#x3D;00为例，A,B之间的最小码距为2</li>
+<li>码距的作用：增大码距能够起到检错的作用，因为数据在传输的过程中如果链路出现了问题，那么将会使得接收到的二进制数发生变化，若码距过小，则很可能造成信息的混淆，增大码距就使得被改变的二进制数混淆信息的概率极大的降低;若码距再进行增大，则能够起到纠错的作用，因为数据链路出错的概率比较低，只能造成传输中极少二进制数的改变，我们可以根据该传输失真的二进制数中大部分二进制数的构成来进行推断，推断出结果就达到了纠错的目的。</li>
+</ol>
+<blockquote>
+<p>在一个码组内为了检测e个误码，要求最小码距d应满足：d&gt;&#x3D;e+1<br>在一个码组内为了纠正t个误码，要求最小码距d应该满足：d&gt;&#x3D;2t+1</p>
+</blockquote>
+<h4 id="循环校验码CRC"><a href="#循环校验码CRC" class="headerlink" title="循环校验码CRC"></a>循环校验码CRC</h4><p>这是一种可以检错但不能纠错的一种编码</p>
+<ol>
+<li>CRC的概念：在对信息进行编码的时候在其尾部加入一些校验信息，让编码后的数据能够与循环校验码的生成多项式相除余数为零，若不为零则说明传输过程出现了错误，其中，原码加上(增添在右方)校验信息加(做加法)上余数所得的码即为CRC，</li>
+</ol>
+<p>注(1)：生成多项式是一个二进制数，如”X^4+X^3+X+1”,这个生成多项式实际上就是二进制数11011；在相除时，需在原码后方添加一些0，添加的0的个数等于生成多项式的位数减去1，增加的0即为校验信息。<br>注(2)：二进制的除法与算术除法相似，唯一不同的是所得除数在作减法时，减得的值要取绝对值，即0-1&#x3D;1；这样使得整个除法运算中不存在借位。</p>
+<h4 id="海明校验码"><a href="#海明校验码" class="headerlink" title="海明校验码"></a>海明校验码</h4><ol>
+<li>概念：海明码是一种利用奇偶性进行检错和纠错的校验码，是一种插入到信息中的编码，一般为多个码，其插入的位置满足规律：<strong>2^r&gt;&#x3D;x+r+1</strong>；其中，x为信息的二进制数的位数，r为校验码的个数，而插入信息的位置则是2^r-1，2^r-2……2^0;如r&#x3D;3时，校验码就插在1，2，4位置</li>
+<li>海明校验码的作用：将信息转换为海明校验码形式以后，我们就能进行纠错，如信息1011，其海明校验码的正确形式为1010101，若收到了1011101，我们可以将两个数的校验码位的数提取出来，并在对应位置进行异或运算，如该例得到了001，则说明第1位’(左数第一个信息位)出错了,若得到了010，则说明第二个信息位出错了。</li>
+</ol>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/img/202307232307848.png" alt="image.png"></p>
+<blockquote>
+<p>给出一个容易理解的题解：<a target="_blank" rel="noopener" href="https://blog.csdn.net/coolskyying/article/details/78963550">https://blog.csdn.net/coolskyying/article/details/78963550</a><br>第三步之后，H1就是二进制末第一位为1的（不包括自身），H2为第二位，H3为第三位</p>
+</blockquote>
+<h4 id="奇偶校验码"><a href="#奇偶校验码" class="headerlink" title="奇偶校验码"></a>奇偶校验码</h4><p>奇偶校验码是在有效信息位前边加上一位校验码，码距为2，可以检测一位错误（或奇数位错误），不能确定出错的位置。<br><strong>奇校验码</strong>：整个校验码（校验位和有效信息位）中“1”的个数为奇数；<br><strong>偶校验码</strong>：整个校验码（校验位和有效信息位）中“1”的个数为偶数；<br>收发端约定采用的是奇校验还是偶校验，然后接收端对接收的数据进行校验。比如，1011是奇校验码，0011是偶校验码。</p>
+</article><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="post-reward" onclick="AddRewardMask()"><div class="reward-button button--animated"><i class="hnfont icon-hand-heart-fill"></i> 打赏作者</div><div class="reward-main"><ul class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/" target="_blank" title="赞赏作者"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></ul></div></div><div class="reward-link mode"><a class="reward-link-button" href="/wechat/"><i class="hnfont icon-plant-fill"></i>运营模式与责任</a></div><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="hnfont icon-qr-code-fill"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=软件设计师知识点整理（一）&amp;url=https://blog.bywind.xyz/posts/3e2b8eae.html&amp;pic=/img/cover/image-2023072201.png" title="分享到微博" rel="noopener external nofollow noreferrer noopener"><i class="hnfont icon-weibo-fill" style="font-size:22px"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="hnfont icon-link-fill"></i></div></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E8%80%83/"><span class="tags-punctuation"></span>软考<span class="tagsPageCount">3</span></a><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/"><span class="tags-punctuation"></span>软件设计师<span class="tagsPageCount">3</span></a></div></div></div></div><div class="post-copyright"><div class="post-copyright__author"><a class="post-copyright__original" title="本文为原创文章，注意版权协议" href="/cc/">原创</a><a class="post-copyright-title" href="#"><span>软件设计师知识点整理（一）</span></a></div><div class="post-copyright__type"><span class="post-copyright-info" id="post-copyright-url"><a href="https://blog.bywind.xyz/posts/3e2b8eae.html">https://blog.bywind.xyz/posts/3e2b8eae.html</a></span><button class="post-copyright-copybtn" onclick="rm.copyPageUrl()"><i class="hnfont icon-copy-fill"></i></button></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 协议，完整转载请注明来自 <a href="https://blog.bywind.xyz" target="_blank">随风起</a>！</span></div></div><nav class="pagination-post needEndHide" id="pagination"><div class="prev-post pull-left"><a href="/posts/aebcf5cb.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072201.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">软件设计师知识点整理（二）</div></div></a></div><div class="next-post pull-right"><a href="/posts/1de04ceb.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-20230222173151498.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">LeetCode刷题记录（二）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="hnfont icon-star-smile-fill"></i><span>阅读建议</span><div class="relatedPosts-link"><a onclick="event.preventDefault(); toRandomPost();" href="javascript:void(0);" >随便逛逛</a></div></div><div class="relatedPosts-list"><div><a href="/posts/aebcf5cb.html" title="软件设计师知识点整理（二）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072201.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-24</div><div class="title">软件设计师知识点整理（二）</div></div></a></div><div><a href="/posts/e3a25699.html" title="软件设计师知识点整理（三）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072201.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-24</div><div class="title">软件设计师知识点整理（三）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="hnfont icon-chat-1-fill"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="bywind.addRandomCommentInfo()" href="javascript:void(0)" rel="external nofollow">匿名评论</a></div><div class="comment-privacy"><a href="/privacy/">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="author-info__top-group"><div class="author-info__sayhi" id="author-info__sayhi" onclick="bywind.changeSayHelloText()">早上好！</div></div></div><div class="avatar-img-group"><img class="avatar-img entered loaded" onerror="this.onerror=null;this.src='https://bu.dusays.com/2023/03/03/6401a7902b8de.png'" alt="avatar" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png"/><div class="avatar-sticker"><div class="avatar-sticker-img" style="font-size: 20px" alt="avatar">🍪</div></div></div><div class="author-info__description_group"><div class="author-info__description">这里见证一个陌生人的<b>成长</b>，这有关于<b>学习</b>、<b>开发</b>相关的问题和看法，还有<b>生活</b>和<b>分享</b>。</div><div class="author-info__description2"><b>星空夜下，无限的节目，抒写着那一幕幕永不停歇的精彩</b></div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><div class="author-info__name">随风起</div><div class="author-info__desc">分享知识与美好时光</div></a><!--if theme.aside.card_author.button.enable--><!--  .banner-button-group--><!--    .banner-button(onclick=`pjax.loadUrl("` + theme.aside.card_author.button.link + `")`)--><!--      i(class=theme.aside.card_author.button.icon)--><!--      span.banner-button-text=theme.aside.card_author.button.text--><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/haonan15" target="_blank" title="Github"><i class="hnfont icon-github-line"></i></a><a class="social-icon" href="mailto:jolyne15@qq.com" target="_blank" title="Email"><i class="hnfont icon-mail-line"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="hnfont icon-menu-fill"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"><span class="toc-text">一、计算机网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI七层模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-x2F-IP-%E4%BA%94%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">TCP&#x2F;IP 五层参考模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%9C%A8%E5%90%84%E5%B1%82%E4%BC%A0%E8%BE%93%E8%BF%87%E7%A8%8B"><span class="toc-text">数据在各层传输过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF%E6%A0%87%E5%87%86%E4%B8%8E%E5%8D%8F%E8%AE%AE"><span class="toc-text">网络技术标准与协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84"><span class="toc-text">网络类型与拓扑结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="toc-text">网络规划与设计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1"><span class="toc-text">逻辑网络设计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E7%BD%91%E7%BB%9C%E8%AE%BE%E8%AE%A1"><span class="toc-text">物理网络设计</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%B1%82%E8%AE%BE%E8%AE%A1"><span class="toc-text">分层设计</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86"><span class="toc-text">IP地址与子网划分</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E5%90%AB%E4%B9%89%E7%9A%84IP%E5%9C%B0%E5%9D%80"><span class="toc-text">特殊含义的IP地址</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E7%BD%91"><span class="toc-text">无线网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%85%A5%E6%8A%80%E6%9C%AF"><span class="toc-text">网络接入技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPv6"><span class="toc-text">IPv6</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-text">二、操作系统基本原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="toc-text">操作系统概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-text">进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E4%B8%89%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%8A%B6%E6%80%81"><span class="toc-text">进程的三种基本状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E4%BA%94%E6%80%81%E6%A8%A1%E5%9E%8B-%E4%B8%89%E6%80%81%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-text">进程的五态模型(三态模型的发展)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9D%97%E7%9A%84%E7%BB%84%E7%BB%87%E6%96%B9%E5%BC%8F"><span class="toc-text">进程控制块的组织方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%89%8D%E8%B6%8B%E5%9B%BE"><span class="toc-text">前趋图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%90%8C%E6%AD%A5%E4%B8%8E%E4%BA%92%E6%96%A5"><span class="toc-text">进程的同步与互斥</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#PV%E6%93%8D%E4%BD%9C"><span class="toc-text">PV操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pv%E6%93%8D%E4%BD%9C%E4%B8%8E%E5%89%8D%E8%B6%8B%E5%9B%BE"><span class="toc-text">pv操作与前趋图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%BB%E9%94%81%E9%97%AE%E9%A2%98"><span class="toc-text">死锁问题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86"><span class="toc-text">存储管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E5%8C%BA%E5%AD%98%E5%82%A8%E7%BB%84%E7%BB%87"><span class="toc-text">分区存储组织</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B5%E5%BC%8F%E5%AD%98%E5%82%A8%E3%80%81%E6%AE%B5%E5%BC%8F%E5%AD%98%E5%82%A8%E3%80%81%E6%AE%B5%E9%A1%B5%E5%BC%8F%E5%AD%98%E5%82%A8"><span class="toc-text">页式存储、段式存储、段页式存储</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95"><span class="toc-text">页面置换算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E4%BD%B3%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95%EF%BC%88OPT%EF%BC%89"><span class="toc-text">最佳页面置换算法（OPT）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%88%E8%BF%9B%E5%85%88%E5%87%BA%E6%B3%95%EF%BC%88FIFO%EF%BC%89"><span class="toc-text">先进先出法（FIFO）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%80%E8%BF%91%E6%9C%80%E5%B0%91%E4%BD%BF%E7%94%A8%E7%BD%AE%E6%8D%A2%E6%B3%95%EF%BC%88LRU%EF%BC%89"><span class="toc-text">最近最少使用置换法（LRU）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86"><span class="toc-text">文件管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">索引文件结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E5%9E%8B%E7%BB%93%E6%9E%84%E7%9B%AE%E5%BD%95"><span class="toc-text">文件和数型结构目录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E9%97%B2%E5%AD%98%E5%82%A8%E7%A9%BA%E9%97%B4%E7%9A%84%E7%AE%A1%E7%90%86"><span class="toc-text">空闲存储空间的管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86"><span class="toc-text">设备管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F"><span class="toc-text">数据传输控制方式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%99%9A%E8%AE%BE%E5%A4%87%E4%B8%8ESPOOLING%E6%8A%80%E6%9C%AF"><span class="toc-text">虚设备与SPOOLING技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E5%86%85%E6%A0%B8%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-text">微内核操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E4%B8%8E%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="toc-text">三、计算机组成原理与体系结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-text">数据的表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2"><span class="toc-text">进制转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81%E7%A7%BB%E7%A0%81"><span class="toc-text">原码反码补码移码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BF%90%E7%AE%97"><span class="toc-text">浮点数运算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%93%E6%9E%84"><span class="toc-text">计算机结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Flynn%E5%88%86%E7%B1%BB%E6%B3%95"><span class="toc-text">Flynn分类法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CISC%E4%B8%8ERISC%EF%BC%88%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-text">CISC与RISC（指令系统）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E6%8A%80%E6%9C%AF"><span class="toc-text">流水线技术</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%91%A8%E6%9C%9F%E5%8F%8A%E6%B5%81%E6%B0%B4%E7%BA%BF%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4%E8%AE%A1%E7%AE%97"><span class="toc-text">流水线周期及流水线执行时间计算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%90%9E%E5%90%90%E7%8E%87%E8%AE%A1%E7%AE%97"><span class="toc-text">流水线吞吐率计算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E7%9A%84%E5%8A%A0%E9%80%9F%E6%AF%94"><span class="toc-text">流水线的加速比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E7%BA%BF%E7%9A%84%E6%95%88%E7%8E%87"><span class="toc-text">流水线的效率</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E7%B3%BB%E7%BB%9F"><span class="toc-text">存储系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Cache"><span class="toc-text">Cache</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E5%AD%98"><span class="toc-text">主存</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A3%81%E7%9B%98%E7%BB%93%E6%9E%84%E4%B8%8E%E5%8F%82%E6%95%B0"><span class="toc-text">磁盘结构与参数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BA%BF%E7%B3%BB%E7%BB%9F"><span class="toc-text">总线系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%88%86%E6%9E%90%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="toc-text">系统可靠性分析与设计</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%B2%E8%81%94%E7%B3%BB%E7%BB%9F"><span class="toc-text">串联系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B9%B6%E8%81%94%E7%B3%BB%E7%BB%9F"><span class="toc-text">并联系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%A1%E5%86%97%E4%BD%99%E7%B3%BB%E7%BB%9F%E4%B8%8E%E6%B7%B7%E5%90%88%E7%B3%BB%E7%BB%9F"><span class="toc-text">模冗余系统与混合系统</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%AE%E9%94%99%E6%8E%A7%E5%88%B6-CRC%E4%B8%8E%E6%B5%B7%E6%98%8E%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="toc-text">差错控制-CRC与海明校验码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E9%94%99%E4%B8%8E%E7%BA%A0%E9%94%99"><span class="toc-text">检错与纠错</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A0%81%E8%B7%9D%E5%8F%8A%E5%85%B6%E4%BD%9C%E7%94%A8"><span class="toc-text">码距及其作用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E6%A0%A1%E9%AA%8C%E7%A0%81CRC"><span class="toc-text">循环校验码CRC</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%B7%E6%98%8E%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="toc-text">海明校验码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%87%E5%81%B6%E6%A0%A1%E9%AA%8C%E7%A0%81"><span class="toc-text">奇偶校验码</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget bywind-right-widget" id="card-wechat" onclick="pjax.loadUrl(&quot;/wechat/&quot;)"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="hnfont icon-map-line"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/8d92de36.html" title="设计模式之结构型模式：构建灵活且可复用的类和对象结构"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072401.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式之结构型模式：构建灵活且可复用的类和对象结构"/></a><div class="content"><a class="article-recent_post_categories" href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a><a class="title" href="/posts/8d92de36.html" title="设计模式之结构型模式：构建灵活且可复用的类和对象结构">设计模式之结构型模式：构建灵活且可复用的类和对象结构</a><time datetime="2023-07-24T06:42:10.000Z" title="发表于 2023-07-24 14:42:10">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5c53e9d7.html" title="设计模式之创建型模式：将对象的创建与使用分离"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072401.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式之创建型模式：将对象的创建与使用分离"/></a><div class="content"><a class="article-recent_post_categories" href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a><a class="title" href="/posts/5c53e9d7.html" title="设计模式之创建型模式：将对象的创建与使用分离">设计模式之创建型模式：将对象的创建与使用分离</a><time datetime="2023-07-24T06:33:23.000Z" title="发表于 2023-07-24 14:33:23">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e617886d.html" title="设计模式概述：构建灵活可重用的代码，提高软件开发效率"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072401.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="设计模式概述：构建灵活可重用的代码，提高软件开发效率"/></a><div class="content"><a class="article-recent_post_categories" href="/categories/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">经验分享</a><a class="title" href="/posts/e617886d.html" title="设计模式概述：构建灵活可重用的代码，提高软件开发效率">设计模式概述：构建灵活可重用的代码，提高软件开发效率</a><time datetime="2023-07-24T06:28:36.000Z" title="发表于 2023-07-24 14:28:36">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e3a25699.html" title="软件设计师知识点整理（三）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072201.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件设计师知识点整理（三）"/></a><div class="content"><a class="article-recent_post_categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="title" href="/posts/e3a25699.html" title="软件设计师知识点整理（三）">软件设计师知识点整理（三）</a><time datetime="2023-07-24T02:50:06.000Z" title="发表于 2023-07-24 10:50:06">2023-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/aebcf5cb.html" title="软件设计师知识点整理（二）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/image-2023072201.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="软件设计师知识点整理（二）"/></a><div class="content"><a class="article-recent_post_categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a><a class="title" href="/posts/aebcf5cb.html" title="软件设计师知识点整理（二）">软件设计师知识点整理（二）</a><time datetime="2023-07-24T00:51:53.000Z" title="发表于 2023-07-24 08:51:53">2023-07-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="bywind-footer-bar"><div class="footer-logo"><i class="hnfont"></i></div><div class="footer-bar-description">来自 随风起 最新设计与科技的文章</div><a class="footer-bar-link" href="/">了解更多</a></div><div id="footer_deal"><a class="deal_link" href="mailto:jolyne15@qq.com" title="email"><i class="hnfont icon-mail-line"></i></a><a class="deal_link" target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1849907187&amp;site=qq&amp;menu=yes" title="qq"><i class="fa-brands fa-qq"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/7616659391" title="微博"><i class="hnfont icon-weibo-fill"></i></a><img class="footer_mini_logo" style="border-radius:50%" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud-image-host.oss-cn-beijing.aliyuncs.com/dog.gif" onclick="btf.scrollToDest(0,500)" title="返回顶部"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/haonan15" title="Github"><i class="hnfont icon-github-line"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://dribble.com/bywind" title="dribbble"><i class="hnfont icon-dribble-line"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://twitter.com/bywind" title="Twitter"><i class="hnfont icon-twitter-line"></i></a></div><div id="bywind-footer"><div class="footer-group"><h3 class="footer-title">直达</h3><div class="footer-links"><a class="footer-item" title="我的主页" target="_blank" rel="noopener" href="https://www.bywind.xyz">我的主页</a><a class="footer-item" title="音乐欣赏" href="/music/">音乐欣赏</a><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="随机文章" href="javascript:void(0)" onclick="toRandomPost()">随机文章</a></div></div><div class="footer-group"><h3 class="footer-title">分类</h3><div class="footer-links"><a class="footer-item" title="学习笔记" href="/categories/学习笔记/">学习笔记</a><a class="footer-item" title="魔改教程" href="/categories/魔改教程/">魔改教程</a><a class="footer-item" title="Java开发" href="/categories/Java开发/">Java开发</a></div></div><div class="footer-group"><h3 class="footer-title">关于</h3><div class="footer-links"><a class="footer-item" title="关于我" href="/about/">关于我</a><a class="footer-item" title="文章归档" href="/archives/">文章归档</a><a class="footer-item" title="更新记录" href="/update/">更新记录</a></div></div><div class="footer-group"><h3 class="footer-title">服务</h3><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="百度统计" target="_blank" rel="noopener" href="https://tongji.baidu.com/">百度统计</a></div></div><div class="footer-group"><h3 class="footer-title">协议</h3><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/cc/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><h3 class="footer-title">友链</h3><a class="random-friends-btn" href="javascript:bywind.addFriendLinksInFooter();" title="换一批友情链接"><i class="hnfont icon-refresh-line"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2024 By <a class="footer-bar-link" target='_blank' href="https://blog.bywind.xyz"> 随风起 </a></div></div></div><div class="footer-bar-right"><a class="footer-bar-link" href="/atom.xml" target="_blank">订阅</a><a class="footer-bar-link" href="/update/">主题</a><a class="footer-bar-link" href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">晋ICP备2023017784号</a><a class="footer-bar-link cc" href="/cc/" title="cc协议"><i class="hnfont icon-copyright-line"></i><i class="hnfont icon-creative-commons-by-line"></i><i class="hnfont icon-creative-commons-nc-line"></i><i class="hnfont icon-creative-commons-nd-line"></i></a></div></div></div><div class="needEndHide" id="cookies-window"><div class="cookies-window-title">协议提醒助手</div><div class="cookies-window-content"><span class="cookies-tip">查看本站为你的个人隐私做出的努力</span><a class="cookies-link" href="/privacy/" title="本站如何保护你的隐私"><i class="hnfont icon-arrow-right-circle-fill"></i></a></div></div><div id="quit-box" onclick="RemoveRewardMask()"></div><div class="comment-barrage needEndHide"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div class="needEndHide" id="nav-music" onclick="bywind.musicToggle()"><div id="nav-music-hoverTips">播放音乐</div><meting-js id="2751969066" server="tencent" type="playlist" mutex="true" preload="auto" theme="var(--bywind-main)" data-lrctype="0" order="random"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax"><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="hnfont icon-arrow-left-line"></i></div><div class="rightMenu-item" id="menu-forward"><i class="hnfont icon-arrow-right-line"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="hnfont icon-restart-line"></i></div><div class="rightMenu-item" id="menu-top"><i class="hnfont icon-arrow-up-line"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="hnfont icon-copy-fill"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="hnfont icon-paste-fill"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="hnfont icon-message-add"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="hnfont icon-external-link"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="hnfont icon-copy-fill"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="hnfont icon-copy-fill"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="hnfont icon-download-cloud-fill"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-search"><i class="hnfont icon-search-line"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="hnfont icon-baidu-fill"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="hnfont icon-play-fill"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="hnfont icon-skip-back-fill"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="hnfont icon-skip-forward-fill"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open('https://y.qq.com/n/ryqq/playlist/2751969066', '_blank');"><i class="hnfont icon-play-list"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="hnfont icon-copy-fill"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost" onclick="toRandomPost()"><i class="hnfont icon-signal-tower-fill"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="hnfont icon-category-fill"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="hnfont icon-tags-fill"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item menu-link" href="/privacy/"><i class="hnfont icon-shield-user-fill"></i><span>隐私协议</span></a><a class="rightMenu-item menu-link" href="/cc/"><i class="hnfont icon-creative-commons-fill"></i><span>版权协议</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><div class="rightMenu-item" id="menu-copy"><i class="hnfont icon-copy-fill"></i><span>复制地址</span></div><div class="rightMenu-item" id="menu-commentBarrage"><i class="hnfont icon-chat-1-fill"></i><span class="menu-commentBarrage-text">关闭热评</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="hnfont icon-moon-clear-fill"></i><span class="menu-darkmode-text">显示模式</span></div><div class="rightMenu-item" id="menu-translate"><i class="hnfont icon-panben"></i><span>轉為繁體</span></div></div></div><div id="rightmenu-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script charset="utf-8" data-pjax src="/js/blogex.js"></script><script src="/js/tw_cn.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.bywind.xyz/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, {"count":true}))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.bywind.xyz/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.staticfile.org/twikoo/1.6.7/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.bywind.xyz/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.staticfile.org/twikoo/1.6.7/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick}</span></div></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn.bywind.xyz/source/Meting2.min.js"></script><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"JqNOFlYj12ogPJ9Y",ck:"JqNOFlYj12ogPJ9Y"})</script><script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script><script>new LingQue.Monitor().init({id:"JqNOmEChi1qTN6k2"});</script><script src="/js/rgbaster.min.js"></script><script src="/js/waterfall/waterfall.min.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/meting/2.0.1/Meting.min.js"></script><script src="https://cdn.staticfile.org/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script data-pjax src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/rightmenu.js"></script><script data-pjax src="/bywind/random.js"></script><script data-pjax src="/js/commentBarrage.js"></script><script data-pjax src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/6.6.2/swiper-bundle.min.js"></script></div></body></html>
