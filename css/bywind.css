@@ -59,7 +59,7 @@
     --bywind-card-btn-bg: #edf0f7;
     --bywind-post-blockquote-bg: #fafcff;
     --bywind-post-tabs-bg: #f2f5f8;
-    --bywind-secondbg: #f1f3f8;
+    --bywind-secondbg: #f7f7f9;
     --bywind-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
     --bywind-card-bg: #fff;
     --bywind-card-bg-op: var(--bywind-black-op);
@@ -11258,13 +11258,13 @@ details[open]:not(.tk-admin-config-group) > summary:hover:after {
 }
 
 #article-container code {
-    color: var(--bywind-white);
+    color: var(--bywind-pink);
     padding: 0.2rem 0.4rem;
     border-radius: 4px;
     margin: 0px 4px;
-    background: var(--bywind-pink);
+    background: var(--bywind-secondbg);
     line-height: 2;
-    box-shadow: var(--bywind-shadow-border);
+    font-weight: 700;
 }
 
 #article-container code::selection {
@@ -15609,7 +15609,7 @@ span.hexo-douban-pagenum {
 
 .author-content-item {
     width: 49%;
-    border-radius: 24px;
+    border-radius: 12px;
     background: var(--bywind-card-bg);
     border: var(--style-border-always);
     box-shadow: var(--bywind-shadow-border);
