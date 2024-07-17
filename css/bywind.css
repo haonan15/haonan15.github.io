@@ -10073,6 +10073,17 @@ div#author-info__sayhi:hover {
 #aside-content>div.card-widget.card-info>div.card-info-avatarimg:hover img {
     transform: scale(1.03);
 }
+/* 社交图标经过 css*/
+a.author-info__bottom-group-left:hover {
+    opacity: .8
+}
+
+#aside-content .card-info .card-info-social-icons .social-icon:hover i {
+    background: var(--bywind-white);
+    transform: scale(1.1);
+    color: var(--bywind-main);
+    box-shadow: none
+}
 
 /* 作者文章列表链接 */
 #aside-content>div.card-widget.card-info>div>div.card-info-data>div:nth-child(0)>a>div.headline {
@@ -10652,6 +10663,7 @@ a.extend.prev {
 #post-firstinfo .post-meta__tags:hover {
     color: var(--bywind-white);
     opacity: 1;
+    background: var(--bywind-white-op)
 }
 
 span.post-meta-categories {
@@ -10906,6 +10918,7 @@ span.post-meta-position {
 
 .post-meta-commentcount:hover {
     opacity: 1;
+    background: var(--bywind-white-op);
 }
 
 #twikoo-count {
@@ -13059,7 +13072,7 @@ button.el-button.tk-cancel.el-button--default.el-button--small {
 }
 
 .tk-extra {
-    background: var(--bywind-card-bg);
+    background: var(--bywind-secondbg);
     border: var(--style-border-always);
     padding: 1px 5px 1px 2px;
     border-radius: 8px;
